@@ -274,7 +274,7 @@ body::-webkit-scrollbar-thumb {
     align-items: center; */
 }
 
-.banner1::after{
+.banner1::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -285,9 +285,11 @@ body::-webkit-scrollbar-thumb {
     opacity: 0.8;
     z-index: 0;
 }
-.zIndex{
+
+.zIndex {
     z-index: 1;
 }
+
 .hero-header .left {
     width: 50%;
 }
@@ -315,12 +317,14 @@ body::-webkit-scrollbar-thumb {
     border: none;
     font-size: 15px;
 }
-.btnButton:hover{
+
+.btnButton:hover {
     background-color: #fff;
-    color:#000;
+    color: #000;
     transition: 0.5s all ease-in-out;
     transition: all 250ms;
 }
+
 .hero-header .right {
     width: 50%;
 }
@@ -353,7 +357,7 @@ body::-webkit-scrollbar-thumb {
     transform: translateY(-50px);
 }
 
-.swiper-pagination-fraction,
+.Homebanner .swiper-pagination-fraction,
 .swiper-pagination-custom,
 .swiper-horizontal>.swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal {
@@ -362,97 +366,116 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
 }
 
-.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.Homebanner .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet .active {
     background-color: #CDBDAE !important;
     border: 3px solid #CDBDAE;
     width: 15px;
     height: 15px;
 }
-.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
-.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+
+.Homebanner .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
     border: 3px solid #fff;
     background-color: transparent;
     width: 15px;
     height: 15px;
 }
+
 /* ==========Home Banner Css Closed=========== */
 /* ==========Home About Section Css Closed=========== */
-.homeAboutsection{
+.homeAboutsection {
     background-color: #fff;
     margin-top: 5rem;
-    margin-bottom:5rem;
+    margin-bottom: 5rem;
 }
-.homeAboutsection h2{
+
+.homeAboutsection h2 {
     color: #41607F;
     font-family: "Balgin-Bold";
 }
-.homeAboutsection span{
+
+.homeAboutsection span {
     color: #787C85;
     font-family: "Balgin-Bold";
     font-size: 20px;
 }
-.homeAboutsection p{
+
+.homeAboutsection p {
     color: #787C85;
     font-family: "Mont-Light";
     font-size: 20px;
 }
-.homeAboutsection i{
+
+.homeAboutsection i {
     color: #41607F;
-    padding-right:10px;
+    padding-right: 10px;
 }
-.aboutImgdiv{
+
+.aboutImgdiv {
     width: 320px;
     height: 550px;
 }
-.aboutImg{
+
+.aboutImg {
     width: 320px;
     height: 545px;
 }
-.aboutImg img{
+
+.aboutImg img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.aboutImgdiv1{
+
+.aboutImgdiv1 {
     width: 350px;
     height: 275px;
 }
-.aboutImgDiv{
+
+.aboutImgDiv {
     width: 320px;
     height: 270px;
 }
-.aboutImgDiv img{
+
+.aboutImgDiv img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.aboutImgdiv2{
+
+.aboutImgdiv2 {
     width: 320px;
     height: 275px;
 }
-.aboutImgDiv2{
+
+.aboutImgDiv2 {
     width: 320px;
     height: 270px;
 }
-.aboutImgDiv2 img{
+
+.aboutImgDiv2 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.aboutsmDiv{
+
+.aboutsmDiv {
     width: 200px;
     height: 150px;
 }
-.aboutsmDivImg{
+
+.aboutsmDivImg {
     width: 200px;
     height: 150px;
 }
-.aboutsmDivImg img{
+
+.aboutsmDivImg img {
     width: 100%;
     height: 100%;
-    object-fit:cover;
+    object-fit: cover;
 }
+
 .btnButtonload {
     background-color: #41607F;
     font-family: "Mont-Light";
@@ -461,49 +484,58 @@ body::-webkit-scrollbar-thumb {
     border: none;
     font-size: 15px;
 }
-.btnButtonload:hover{
+
+.btnButtonload:hover {
     background-color: #fff;
-    color:#000;
+    color: #000;
     transition: 0.5s all ease-in-out;
     transition: all 250ms;
+    border: 1px solid #41607F;
 }
+
 /* ==========Home About Section Css Closed=========== */
 /* ==========Home Product Section Open=========== */
-.homeProduct{
+.homeProduct {
     background-color: #fff;
     margin-top: 6rem;
-    margin-bottom:6rem;
+    margin-bottom: 6rem;
 }
-.homeProduct h2{
+
+.homeProduct h2 {
     color: #41607F;
     font-family: "Balgin-Bold";
 }
-.homeProduct span{
+
+.homeProduct span {
     color: #787C85;
     font-family: "Balgin-Bold";
     font-size: 20px;
 }
-.homeProduct p{
+
+.homeProduct p {
     color: #787C85;
     font-family: "Mont-Light";
     font-size: 15px;
     padding-top: 10px;
 }
-.productSlider{
+
+.productSlider {
     position: absolute;
-    right:0;
+    right: 0;
     top: 0;
     background-color: #8b0129;
     width: 60%;
     height: 500px;
 }
+
 /* ==========Home Product Section Close=========== */
 /* ==========Home Good Thimgs Section Open=========== */
-.goodThings{
+.goodThings {
     margin-top: 5rem;
-    margin-bottom:5rem;
+    margin-bottom: 5rem;
 }
-.goodThingsDiv{
+
+.goodThingsDiv {
     background: url("../images/1x/packages.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -515,7 +547,8 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
     align-items: center;
 }
-.goodThingsDiv::after{
+
+.goodThingsDiv::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -524,6 +557,7 @@ body::-webkit-scrollbar-thumb {
     left: 0;
     background-image: url("../images/1x/overlay2.png");
 }
+
 .goodThingsDiv h2 {
     color: #fff;
     font-family: "Balgin-Bold";
@@ -539,6 +573,7 @@ body::-webkit-scrollbar-thumb {
     color: #FFF;
     font-family: "Mont-Light";
 }
+
 .btnGood {
     background-color: #fff;
     font-family: "Mont-Light";
@@ -547,41 +582,48 @@ body::-webkit-scrollbar-thumb {
     border: none;
     font-size: 15px;
 }
-.btnGood:hover{
+
+.btnGood:hover {
     background-color: #000;
-    color:#fff;
+    color: #fff;
     transition: 0.5s all ease-in-out;
     transition: all 250ms;
 }
+
 /* ==========Home Good Thimgs Section Close=========== */
 /* ==========Home Best Salling Product Section Open=========== */
-.bestSalling{
+.bestSalling {
     margin-top: 5rem;
     margin-bottom: 5rem;
 }
-.bestSalling h2{
+
+.bestSalling h2 {
     color: #41607F;
     font-family: "Balgin-Bold";
     font-size: 2.5rem;
 }
-.bestSalling h3{
+
+.bestSalling h3 {
     color: #787C85;
     font-family: "Balgin-Bold";
     font-size: 2.5rem;
     padding-bottom: 2rem;
 }
-.bestSalling p{
+
+.bestSalling p {
     color: #787C85;
     font-family: "Mont-Light";
     line-height: 2;
     padding-bottom: 2rem;
 }
-.bestSall{
+
+.bestSall {
     width: 100%;
     height: 450px;
     position: relative;
 }
-.buleDiv{
+
+.buleDiv {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -590,26 +632,207 @@ body::-webkit-scrollbar-thumb {
     background-color: #41607F;
     padding: 20px;
 }
-.bestsallImg{
+
+.bestsallImg {
     width: 100%;
     height: 410px;
 }
-.bestsallImg img{
+
+.bestsallImg img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.bestSalling h4{
+
+.bestSalling h4 {
     font-family: "Poppins-Light";
     color: #fff;
 }
-.bestSalling span{
+
+.bestSalling span {
     font-family: "Poppins-Bold";
     color: #fff;
 }
+
 /* ==========Home Best Salling Product Section Close=========== */
 
+/* ==========Home Client Section Open=========== */
+.clientSec {
+    margin-bottom: 2rem;
+}
 
+.divClient {
+    height: 600px;
+}
+
+.clientSec h2 {
+    color: #41607F;
+    font-family: "Balgin-Bold";
+    font-size: 2.5rem;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.clientDiv {
+    width: 315px;
+    height: 410px;
+    position: relative;
+}
+.clientDivImg {
+    width: 315px;
+    height: 410px;
+}
+
+.clientDivImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.clientDiv::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url("../images/1x/overlay3.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* opacity: .5; */
+}
+.clientDiv:hover .overlay {
+    width: 100%;
+    height: 410px;
+  }
+  
+ .overlay {
+    position: absolute;
+    bottom:0px;
+    right: 0;
+    overflow: hidden;
+    width: 100%;
+    height:0px;
+    transition: .5s ease;
+    z-index: 1;
+  }
+.overlay h5{
+    color: #fff;
+} 
+   .play-font {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: auto;
+    top: 40%;
+    bottom: 0;
+    margin: auto;
+    opacity: 0.5;
+    text-align: center;
+    z-index: 2;
+  } 
+   .rating {
+    display: inline-block;
+    position: relative;
+    height: 50px;
+    line-height: 11px;
+    font-size: 50px;
+  }
+  
+  .rating label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    cursor: pointer;
+  }
+  
+  .rating label:last-child {
+    position: static;
+  }
+  
+  .rating label:nth-child(1) {
+    z-index: 5;
+  }
+  
+  .rating label:nth-child(2) {
+    z-index: 4;
+  }
+  
+  .rating label:nth-child(3) {
+    z-index: 3;
+  }
+  
+  .rating label:nth-child(4) {
+    z-index: 2;
+  }
+  
+  .rating label:nth-child(5) {
+    z-index: 1;
+  }
+  
+  .rating label input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+  
+  .rating label .icon {
+    float: left;
+    color: transparent;
+    font-size: 22px;
+  }
+  
+  .rating label:last-child .icon {
+    color: #FAAF3B;
+  }
+  
+  .rating:not(:hover) label input:checked~.icon,
+  .rating:hover label:hover input~.icon {
+    color: #09f;
+  }
+  
+  .rating label input:focus:not(:checked)~.icon:last-child {
+    color: #000;
+    text-shadow: 0 0 5px #09f;
+  }   
+    
+.clientSec .swiper-wrapper {
+    margin-bottom: 5rem;
+}
+.clientDiv .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    background-color: #41607F;
+    border: none;
+    opacity: 1;
+    transition: all .3s;
+    width: 18px;
+    height: 18px;
+}
+
+.clientDiv .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet-active {
+    width: 48px;
+    height: 18px;
+    display: inline-block;
+    border-radius: 10px;
+    background-color: #a6a8ab;
+    opacity: 1;
+    transition: all .3s;
+}
+
+.clientDiv .swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+}
+
+/* ==========Home Client Section Closed=========== */
 
 
 /* ========================================= 

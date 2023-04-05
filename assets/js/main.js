@@ -155,6 +155,78 @@ var swiper = new Swiper(".mySwiper", {
   
   });
   // 
+  //Swiper Slider2
+  var swiper = new Swiper(".mySwiper1", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    loop:true,
+    navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        // autoplay: {
+        //   delay: 3000,
+        //   disableOnInteraction: false,
+        //   },
+    breakpoints: {
+      // when window width is >= 320px
+      768: {
+      slidesPerView: 3,
+      spaceBetween: 20
+      },
+      375: {
+      slidesPerView: 1,
+      spaceBetween: 20
+      },
+      320: {
+      slidesPerView: 1,
+      spaceBetween: 20
+      },
+      280: {
+      slidesPerView: 1,
+      spaceBetween: 20
+      },
+      414: {
+      slidesPerView: 1,
+      spaceBetween: 20
+      },
+      1920: {
+      slidesPerView: 4,
+      spaceBetween: 20
+      },
+      1600: {
+      slidesPerView: 4,
+      spaceBetween: 20
+    
+      },
+      1366: {
+      slidesPerView: 4,
+      spaceBetween: 10
+      },
+      1400: {
+      slidesPerView: 4,
+      spaceBetween: 20
+      },
+      1366: {
+        slidesPerView: 4,
+        spaceBetween: 10
+        },
+        2560: {
+          slidesPerView: 4,
+          spaceBetween: 20
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 20
+            }
+    }
+    
+    });
+    //  
   
 
 
