@@ -25,7 +25,7 @@
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom Stylesheet -->
     <link href="./assets/css/stylesheet.css" rel="stylesheet">
-    <title>Interior | Home</title>
+    <title>Interior | Home 1</title>
 </head>
 
 <body>
@@ -41,7 +41,17 @@
                     </div>
                     <div class="link">
                         <div class="d-flex justify-content-end">
-                            <a href="./index.html" class="header_links active">Home</a>
+                            <!-- <a href="./index.html" class="header_links active">Home</a> -->
+                            <div class="dropdown header_links active">
+                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Home
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href=".../../index.html">Home 1</a></li>
+                                    <li><a class="dropdown-item" href=".../../index1.html">Home 2</a></li>
+                                </ul>
+                            </div>
                             <a href="./assets/pages/about-us.html" class="header_links">About Us</a>
                             <a href="./assets/pages/Explore.html" class="header_links">Explore Work</a>
                             <a href="./assets/pages/shop.html" class="header_links">Shop</a>
@@ -69,7 +79,20 @@
                 <div class="imglogo text-center"><a href="">
                         <img src="./assets/images/1x/logo.png" alt="img">
                     </a></div>
-                <div class="item"><a href="./index.html" class="header_links active">Home</a></div>
+                <!-- <div class="item"><a href="./index.html" class="header_links active">Home</a></div> -->
+                <div class="item for-cstm-collapse">
+                    <button class="btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#dashboard-collapse" aria-expanded="false">
+                        Home<i class="fa-solid fa-caret-down"></i>
+                    </button>
+                    <div class="collapse" id="dashboard-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a class="link-dark rounded" href=".../../index.html">Home 1</a></li>
+                            <li><a class="link-dark rounded" href=".../../index1.html">Home 2</a></li>
+
+                        </ul>
+                    </div>
+                </div>
                 <div class="item"><a href="./assets/pages/about-us.html" class="header_links">About Us</a></div>
                 <div class="item"><a href="./assets/pages/Explore.html" class="header_links">Explore Work</a></div>
                 <div class="item"><a href="./assets/pages/shop.html" class="header_links">Shop</a></div>
@@ -243,14 +266,55 @@
                         </a>
                     </div>
                     <div class="col-lg-8 col-md-8 col-sm-12">
-
+                        <div class="productSlider">
+                            <div class="swiper mySwiper3">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="sliderPrd">
+                                            <div class="sliderPrdImg">
+                                                <img src="./assets/images/1x/projectslider1.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide wow animated fadeInUp">
+                                        <div class="swiper-slide">
+                                            <div class="sliderPrd">
+                                                <div class="sliderPrdImg">
+                                                    <img src="./assets/images/1x/projectslider2.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide wow animated fadeInDown">
+                                        <div class="swiper-slide">
+                                            <div class="sliderPrd">
+                                                <div class="sliderPrdImg">
+                                                    <img src="./assets/images/1x/projectslider3.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide wow animated fadeInDown">
+                                        <div class="swiper-slide">
+                                            <div class="sliderPrd">
+                                                <div class="sliderPrdImg">
+                                                    <img src="./assets/images/1x/projectslider2.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        </div>
+        </div>
     </section>
     <!--=================Home Product Section Close===================--->
-
     <!--=================Home Good Thimgs Section Open====================--->
     <section class="goodThings">
         <div class="goodThingsDiv">
@@ -273,7 +337,7 @@
         </div>
     </section>
     <!--=================Home Good Thimgs Section Close===================--->
-    <!--=================Home Best Salling Product Section Open===================--->
+    <!--=================Home Best Salling Product Section Open===========--->
     <section class="bestSalling">
         <div class="container text-center">
             <div class="row">
@@ -344,8 +408,7 @@
             </div>
         </div>
     </section>
-    <!--=================Home Best Salling Product Section Close===================--->
-
+    <!--=================Home Best Salling Product Section Close====--->
     <!--=================Home Client Section Open===================--->
     <section class="clientSec">
         <div class="divClient">
@@ -358,44 +421,80 @@
                                 <div class="clientDivImg">
                                     <img src="./assets/images/1x/client4.png" alt="">
                                 </div>
-                                <div class="overlay">
-                                    <div class="play-font">
-                                        <h5>Julie Watson</h5>
-                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod </p>
-                                        <form class="rating">
-                                            <label>
+                                <div class="textDiv text-center">
+                                    <h5>Julie Watson</h5>
+                                    <form class="rating">
+                                        <label>
                                             <input type="radio" name="stars" value="1">
                                             <span class="icon">★</span>
-                                            </label>
-                                            <label>
+                                        </label>
+                                        <label>
                                             <input type="radio" name="stars" value="2">
                                             <span class="icon">★</span>
                                             <span class="icon">★</span>
-                                            </label>
-                                            <label>
+                                        </label>
+                                        <label>
                                             <input type="radio" name="stars" value="3">
                                             <span class="icon">★</span>
                                             <span class="icon">★</span>
                                             <span class="icon">★</span>
-                                            </label>
-                                            <label>
+                                        </label>
+                                        <label>
                                             <input type="radio" name="stars" value="4">
                                             <span class="icon">★</span>
                                             <span class="icon">★</span>
                                             <span class="icon">★</span>
                                             <span class="icon">★</span>
-                                            </label>
-                                            <label>
+                                        </label>
+                                        <label>
                                             <input type="radio" name="stars" value="5">
                                             <span class="icon">★</span>
                                             <span class="icon">★</span>
                                             <span class="icon">★</span>
                                             <span class="icon">★</span>
                                             <span class="icon">★</span>
-                                            </label>
+                                        </label>
+                                    </form>
+                                    <div class="overlay">
+                                        <div class="play-font">
+                                            <h6>Julie Watson</h6>
+                                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                                                nonummy nibh euismod </p>
+                                            <form class="rating1">
+                                                <label>
+                                                    <input type="radio" name="stars" value="1">
+                                                    <span class="icon">★</span>
+                                                </label>
+                                                <label>
+                                                    <input type="radio" name="stars" value="2">
+                                                    <span class="icon">★</span>
+                                                    <span class="icon">★</span>
+                                                </label>
+                                                <label>
+                                                    <input type="radio" name="stars" value="3">
+                                                    <span class="icon">★</span>
+                                                    <span class="icon">★</span>
+                                                    <span class="icon">★</span>
+                                                </label>
+                                                <label>
+                                                    <input type="radio" name="stars" value="4">
+                                                    <span class="icon">★</span>
+                                                    <span class="icon">★</span>
+                                                    <span class="icon">★</span>
+                                                    <span class="icon">★</span>
+                                                </label>
+                                                <label>
+                                                    <input type="radio" name="stars" value="5">
+                                                    <span class="icon">★</span>
+                                                    <span class="icon">★</span>
+                                                    <span class="icon">★</span>
+                                                    <span class="icon">★</span>
+                                                    <span class="icon">★</span>
+                                                </label>
                                             </form>
+                                        </div>
                                     </div>
-                                </div> 
+                                </div>
                             </div>
                         </div>
                         <div class="swiper-slide wow animated fadeInUp">
@@ -403,6 +502,80 @@
                                 <div class="clientDiv">
                                     <div class="clientDivImg">
                                         <img src="./assets/images/1x/client3.png" alt="">
+                                    </div>
+                                    <div class="textDiv text-center">
+                                        <h5>Julie Watson</h5>
+                                        <form class="rating">
+                                            <label>
+                                                <input type="radio" name="stars" value="1">
+                                                <span class="icon">★</span>
+                                            </label>
+                                            <label>
+                                                <input type="radio" name="stars" value="2">
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                            </label>
+                                            <label>
+                                                <input type="radio" name="stars" value="3">
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                            </label>
+                                            <label>
+                                                <input type="radio" name="stars" value="4">
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                            </label>
+                                            <label>
+                                                <input type="radio" name="stars" value="5">
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                            </label>
+                                        </form>
+                                        <div class="overlay">
+                                            <div class="play-font">
+                                                <h6>Julie Watson</h6>
+                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                                                    nonummy nibh euismod </p>
+                                                <form class="rating1">
+                                                    <label>
+                                                        <input type="radio" name="stars" value="1">
+                                                        <span class="icon">★</span>
+                                                    </label>
+                                                    <label>
+                                                        <input type="radio" name="stars" value="2">
+                                                        <span class="icon">★</span>
+                                                        <span class="icon">★</span>
+                                                    </label>
+                                                    <label>
+                                                        <input type="radio" name="stars" value="3">
+                                                        <span class="icon">★</span>
+                                                        <span class="icon">★</span>
+                                                        <span class="icon">★</span>
+                                                    </label>
+                                                    <label>
+                                                        <input type="radio" name="stars" value="4">
+                                                        <span class="icon">★</span>
+                                                        <span class="icon">★</span>
+                                                        <span class="icon">★</span>
+                                                        <span class="icon">★</span>
+                                                    </label>
+                                                    <label>
+                                                        <input type="radio" name="stars" value="5">
+                                                        <span class="icon">★</span>
+                                                        <span class="icon">★</span>
+                                                        <span class="icon">★</span>
+                                                        <span class="icon">★</span>
+                                                        <span class="icon">★</span>
+                                                    </label>
+                                                </form>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -413,6 +586,80 @@
                                     <div class="clientDivImg">
                                         <img src="./assets/images/1x/client2.png" alt="">
                                     </div>
+                                    <div class="textDiv text-center">
+                                        <h5>Julie Watson</h5>
+                                        <form class="rating">
+                                            <label>
+                                                <input type="radio" name="stars" value="1">
+                                                <span class="icon">★</span>
+                                            </label>
+                                            <label>
+                                                <input type="radio" name="stars" value="2">
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                            </label>
+                                            <label>
+                                                <input type="radio" name="stars" value="3">
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                            </label>
+                                            <label>
+                                                <input type="radio" name="stars" value="4">
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                            </label>
+                                            <label>
+                                                <input type="radio" name="stars" value="5">
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                            </label>
+                                        </form>
+                                        <div class="overlay">
+                                            <div class="play-font">
+                                                <h6>Julie Watson</h6>
+                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                                                    nonummy nibh euismod </p>
+                                                <form class="rating1">
+                                                    <label>
+                                                        <input type="radio" name="stars" value="1">
+                                                        <span class="icon">★</span>
+                                                    </label>
+                                                    <label>
+                                                        <input type="radio" name="stars" value="2">
+                                                        <span class="icon">★</span>
+                                                        <span class="icon">★</span>
+                                                    </label>
+                                                    <label>
+                                                        <input type="radio" name="stars" value="3">
+                                                        <span class="icon">★</span>
+                                                        <span class="icon">★</span>
+                                                        <span class="icon">★</span>
+                                                    </label>
+                                                    <label>
+                                                        <input type="radio" name="stars" value="4">
+                                                        <span class="icon">★</span>
+                                                        <span class="icon">★</span>
+                                                        <span class="icon">★</span>
+                                                        <span class="icon">★</span>
+                                                    </label>
+                                                    <label>
+                                                        <input type="radio" name="stars" value="5">
+                                                        <span class="icon">★</span>
+                                                        <span class="icon">★</span>
+                                                        <span class="icon">★</span>
+                                                        <span class="icon">★</span>
+                                                        <span class="icon">★</span>
+                                                    </label>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -421,6 +668,80 @@
                                 <div class="clientDiv">
                                     <div class="clientDivImg">
                                         <img src="./assets/images/1x/client1.png" alt="">
+                                    </div>
+                                    <div class="textDiv text-center">
+                                        <h5>Julie Watson</h5>
+                                        <form class="rating">
+                                            <label>
+                                                <input type="radio" name="stars" value="1">
+                                                <span class="icon">★</span>
+                                            </label>
+                                            <label>
+                                                <input type="radio" name="stars" value="2">
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                            </label>
+                                            <label>
+                                                <input type="radio" name="stars" value="3">
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                            </label>
+                                            <label>
+                                                <input type="radio" name="stars" value="4">
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                            </label>
+                                            <label>
+                                                <input type="radio" name="stars" value="5">
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                            </label>
+                                        </form>
+                                        <div class="overlay">
+                                            <div class="play-font">
+                                                <h6>Julie Watson</h6>
+                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                                                    nonummy nibh euismod </p>
+                                                <form class="rating1">
+                                                    <label>
+                                                        <input type="radio" name="stars" value="1">
+                                                        <span class="icon">★</span>
+                                                    </label>
+                                                    <label>
+                                                        <input type="radio" name="stars" value="2">
+                                                        <span class="icon">★</span>
+                                                        <span class="icon">★</span>
+                                                    </label>
+                                                    <label>
+                                                        <input type="radio" name="stars" value="3">
+                                                        <span class="icon">★</span>
+                                                        <span class="icon">★</span>
+                                                        <span class="icon">★</span>
+                                                    </label>
+                                                    <label>
+                                                        <input type="radio" name="stars" value="4">
+                                                        <span class="icon">★</span>
+                                                        <span class="icon">★</span>
+                                                        <span class="icon">★</span>
+                                                        <span class="icon">★</span>
+                                                    </label>
+                                                    <label>
+                                                        <input type="radio" name="stars" value="5">
+                                                        <span class="icon">★</span>
+                                                        <span class="icon">★</span>
+                                                        <span class="icon">★</span>
+                                                        <span class="icon">★</span>
+                                                        <span class="icon">★</span>
+                                                    </label>
+                                                </form>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -432,18 +753,69 @@
             </div>
         </div>
     </section>
-
     <!--=================Home Client Section Close===================--->
-
-
-
-
-
-
-
-
-
-
+    <!--=================Home Footer Section Open===================--->
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="footer-img">
+                        <a href="./index.html"><img src="./assets/images/1x/logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <p>Pages</p>
+                    <ul class="p-0">
+                        <li><a href="">Home</a></li>
+                        <li><a href="./assets/pages/about-us.html">About us</a></li>
+                        <li><a href="./assets/pages/Explore.html">Explore Work</a></li>
+                        <li><a href="./assets/pages/shop.html">Shop</a></li>
+                        <li><a href="./assets/pages/contact-us.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <p>Follow Us</p>
+                    <div class="d-flex footer-icon textCenter">
+                        <div class="footerIcondiv">
+                            <span class="span"><a href="https://twitter.com/?lang=en" target="_blank"><i
+                                        class="fa-brands fa-twitter"></i></a></span>
+                        </div>
+                        <div class="footerIcondiv">
+                            <span class="span"><a href="https://www.facebook.com/" target="_blank"><i
+                                        class="fa-brands fa-facebook-f"></i></a></span>
+                        </div>
+                        <div class="footerIcondiv">
+                            <span class="span"><a href="https://www.instagram.com/" target="_blank"><i
+                                        class="fa-brands fa-instagram"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 footerCont textCenter">
+                    <p>Contact Info</p>
+                    <ul class="p-0">
+                        <li class="footer-ancher"><i class="fa-solid fa-phone p"></i><a
+                                href="tel:4703884601">123-456-789-0</a></li>
+                        <li><i class="fa-solid fa-envelope"></i><a
+                                href="mailto:webapparel@gmail.com">abc@example.com</a></li>
+                        <li><i class="fa-solid fa-location-dot"></i><a href="https://goo.gl/maps/DKt5kZgULkunrP5MA">abc
+                                street NY city USA 123456</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center ">
+                        <span class="for-theme-link pt-1">
+                            Copyright@BuyBestthemes2024
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--=================Home Footer Section Close===================--->
     <!-- JavaScript Libraries -->
     <!-- Jquery -->
     <script src="./assets/js/jquery.min.js"></script>

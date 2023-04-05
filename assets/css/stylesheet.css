@@ -53,6 +53,52 @@ body::-webkit-scrollbar-thumb {
 
 /*  */
 /*** Navbar ***/
+.btn {
+    text-decoration: none;
+    margin: 0 10px;
+    color: #000;
+    align-items: center;
+    font-size: 0.9rem;
+    font-family: "Mont-Light";
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.btn:hover {
+    color: #8b0129;
+}
+
+.dropdown,
+.dropend,
+.dropstart,
+.dropup {
+    position: relative;
+    padding-top: 10px;
+    margin-left: 20px;
+}
+
+.dropdown-item {
+    margin: 0 0px !important;
+}
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 0.25rem 1rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+
 #main-content {
     position: relative;
     display: none;
@@ -224,7 +270,7 @@ body::-webkit-scrollbar-thumb {
 .logo img {
     width: 50%;
     height: 100%;
-    margin-left: auto;
+    /* margin-left: auto; */
     margin-right: auto;
     display: flex;
 }
@@ -237,7 +283,14 @@ body::-webkit-scrollbar-thumb {
     justify-content: end;
     font-family: "Mont-Light";
 }
-
+#link {
+    width: 80%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Mont-Light";
+}
 .destop-nav-bar .link a {
     text-decoration: none;
     margin: 0px 4px;
@@ -251,6 +304,9 @@ body::-webkit-scrollbar-thumb {
     font-family: "Mont-Light";
 }
 
+.destop-nav-bar .link a:hover {
+    color: #8b0129;
+}
 
 .destop-nav-bar a {
     text-decoration: none;
@@ -499,6 +555,10 @@ body::-webkit-scrollbar-thumb {
     background-color: #fff;
     margin-top: 6rem;
     margin-bottom: 6rem;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .homeProduct h2 {
@@ -523,9 +583,55 @@ body::-webkit-scrollbar-thumb {
     position: absolute;
     right: 0;
     top: 0;
-    background-color: #8b0129;
     width: 60%;
-    height: 500px;
+    height: 550px;
+}
+
+.sliderPrd {
+    width: 100%;
+    height: 550px;
+}
+
+.sliderPrdImg {
+    width: 100%;
+    height: 550px;
+}
+
+.sliderPrdImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-slide .sliderPrd {
+    max-width: 100%;
+    transition: all .25s ease-out;
+    transform: scale(0.9);
+    transform-origin: center;
+}
+
+.swiper-slide-active .sliderPrd {
+    transform: scale(1.0);
+}
+
+.homeProduct .swiper-pagination {
+    padding-top: 6rem
+}
+
+.homeProduct .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet-active {
+    color: #007aff;
+    background-color: transparent;
+    width: 18px;
+    height: 18px;
+}
+
+.homeProduct .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    color: #000;
+    background-color: transparent;
+    width: 18px;
+    height: 18px;
 }
 
 /* ==========Home Product Section Close=========== */
@@ -678,6 +784,7 @@ body::-webkit-scrollbar-thumb {
     height: 410px;
     position: relative;
 }
+
 .clientDivImg {
     width: 315px;
     height: 410px;
@@ -688,7 +795,8 @@ body::-webkit-scrollbar-thumb {
     height: 100%;
     object-fit: cover;
 }
-.clientDiv::after{
+
+.clientDiv::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -701,25 +809,55 @@ body::-webkit-scrollbar-thumb {
     background-repeat: no-repeat;
     /* opacity: .5; */
 }
-.clientDiv:hover .overlay {
+
+.textDiv {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    cursor: pointer;
+    /* background-color: #000; */
+}
+
+.textDiv h5 {
+    color: #fff;
+}
+
+.textDiv:hover .overlay {
     width: 100%;
     height: 410px;
-  }
-  
- .overlay {
+    z-index: 1;
+    display: block;
+}
+
+.textDiv:hover h5 {
+    display: none;
+
+}
+
+.textDiv:hover .rating {
+    display: none;
+
+}
+
+.overlay {
     position: absolute;
-    bottom:0px;
+    bottom: 0px;
     right: 0;
     overflow: hidden;
     width: 100%;
-    height:0px;
+    height: 0px;
     transition: .5s ease;
     z-index: 1;
-  }
-.overlay h5{
+}
+
+.overlay h6 {
     color: #fff;
-} 
-   .play-font {
+}
+
+.play-font {
     width: 100%;
     position: absolute;
     top: 0;
@@ -730,78 +868,149 @@ body::-webkit-scrollbar-thumb {
     margin: auto;
     opacity: 0.5;
     text-align: center;
-    z-index: 2;
-  } 
-   .rating {
+    z-index: 1;
+}
+
+.rating {
     display: inline-block;
     position: relative;
     height: 50px;
     line-height: 11px;
     font-size: 50px;
-  }
-  
-  .rating label {
+}
+
+.rating label {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     cursor: pointer;
-  }
-  
-  .rating label:last-child {
+}
+
+.rating label:last-child {
     position: static;
-  }
-  
-  .rating label:nth-child(1) {
+}
+
+.rating label:nth-child(1) {
     z-index: 5;
-  }
-  
-  .rating label:nth-child(2) {
+}
+
+.rating label:nth-child(2) {
     z-index: 4;
-  }
-  
-  .rating label:nth-child(3) {
+}
+
+.rating label:nth-child(3) {
     z-index: 3;
-  }
-  
-  .rating label:nth-child(4) {
+}
+
+.rating label:nth-child(4) {
     z-index: 2;
-  }
-  
-  .rating label:nth-child(5) {
+}
+
+.rating label:nth-child(5) {
     z-index: 1;
-  }
-  
-  .rating label input {
+}
+
+.rating label input {
     position: absolute;
     top: 0;
     left: 0;
     opacity: 0;
-  }
-  
-  .rating label .icon {
+}
+
+.rating label .icon {
     float: left;
     color: transparent;
     font-size: 22px;
-  }
-  
-  .rating label:last-child .icon {
+}
+
+.rating label:last-child .icon {
     color: #FAAF3B;
-  }
-  
-  .rating:not(:hover) label input:checked~.icon,
-  .rating:hover label:hover input~.icon {
+}
+
+.rating:not(:hover) label input:checked~.icon,
+.rating:hover label:hover input~.icon {
     color: #09f;
-  }
-  
-  .rating label input:focus:not(:checked)~.icon:last-child {
+}
+
+.rating label input:focus:not(:checked)~.icon:last-child {
     color: #000;
     text-shadow: 0 0 5px #09f;
-  }   
-    
+}
+
+/* rating 1 */
+.rating1 {
+    display: inline-block;
+    position: relative;
+    height: 50px;
+    line-height: 11px;
+    font-size: 50px;
+}
+
+.rating1 label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    cursor: pointer;
+}
+
+.rating1 label:last-child {
+    position: static;
+}
+
+.rating1 label:nth-child(1) {
+    z-index: 5;
+}
+
+.rating1 label:nth-child(2) {
+    z-index: 4;
+}
+
+.rating1 label:nth-child(3) {
+    z-index: 3;
+}
+
+.rating1 label:nth-child(4) {
+    z-index: 2;
+}
+
+.rating1 label:nth-child(5) {
+    z-index: 1;
+}
+
+.rating1 label input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.rating1 label .icon {
+    float: left;
+    color: transparent;
+    font-size: 22px;
+}
+
+.rating1 label:last-child .icon {
+    color: #FAAF3B;
+}
+
+.rating1:not(:hover) label input:checked~.icon,
+.rating1:hover label:hover input~.icon {
+    color: #09f;
+}
+
+.rating1 label input:focus:not(:checked)~.icon:last-child {
+    color: #000;
+    text-shadow: 0 0 5px #09f;
+}
+
+/*  */
 .clientSec .swiper-wrapper {
     margin-bottom: 5rem;
 }
+
 .clientDiv .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
     background-color: #41607F;
@@ -833,6 +1042,100 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* ==========Home Client Section Closed=========== */
+/* ==========Home Footer Section Open=========== */
+.footer-img {
+    width: 200px;
+    /* margin: auto; */
+    height: 100px;
+}
+
+.footer p {
+    color: #000;
+    font-family: "Mont-Light";
+}
+
+.footer ul li a {
+    text-decoration: none;
+    padding: 8px;
+    margin-left: 0;
+    color: #000;
+    font-family: "Mont-Light";
+    padding-left: 0;
+}
+
+.footer ul li a:hover {
+    color: #09f;
+}
+
+.footerCont ul li i {
+    margin-right: 11px;
+    font-size: 16px;
+}
+
+.footerIcondiv {
+    background-color: #fff;
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+}
+
+.footerIcondiv,
+.span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerIcondiv i {
+    color: #000;
+}
+
+.footer-bottom span {
+    color: #000;
+    font-family: "Poppins-Light";
+}
+
+.footer-bottom span:hover {
+    color: #09f;
+    cursor: pointer;
+}
+
+/* ==========Home Footer Section Closed=========== */
+
+/*========== About page Css Open============*/
+.bannner2{
+    background: url("../images/1x/packages.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 500px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+.bannner2::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url("../images/1x/overlay.png");
+    opacity: 0.8;
+    z-index: -1;
+}
+.bannner2 h1{
+    color: #fff;
+    font-family: "Balgin-Bold";
+}
+/*========== About page Css Closed==========*/
+
+
+
+
 
 
 /* ========================================= 
@@ -953,6 +1256,22 @@ body::-webkit-scrollbar-thumb {
         color: #000;
         font-family: "Mont-Light";
         font-size: 15px;
+    }
+
+    .item .btn-toggle {
+        background-color: transparent !important;
+        color: #000 !important;
+        font-family: "Mont-Light";
+        font-size: 15px;
+        font-weight: bold !important;
+        border: none;
+    }
+
+    .fa-solid,
+    .fas {
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+        padding-left: 2px;
     }
 
 }
