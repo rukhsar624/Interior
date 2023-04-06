@@ -35,7 +35,10 @@ body::-webkit-scrollbar-thumb {
     font-family: "Mont-Light";
     src: url("../../assets/fonts/Montserrat/Montserrat-Light.ttf");
 }
-
+@font-face {
+    font-family: "Mont-Bold";
+    src: url("../../assets/fonts/Montserrat/Montserrat-Bold.ttf");
+}
 @font-face {
     font-family: "Balgin-Bold";
     src: url("../../assets/fonts/balgin/Balgin\ Bold.ttf");
@@ -44,6 +47,11 @@ body::-webkit-scrollbar-thumb {
 @font-face {
     font-family: "Balgin-Light-Sm";
     src: url("../../assets/fonts/balgin/Balgin\ Light\ Sm\ Condensed.ttf");
+}
+
+@font-face {
+    font-family: "Balgin-Extra-Light-Sm";
+    src: url("../../assets/fonts/balgin/Balgin\ Extra\ Light\ Sm\ Condensed.ttf");
 }
 
 /* width */
@@ -283,6 +291,7 @@ body::-webkit-scrollbar-thumb {
     justify-content: end;
     font-family: "Mont-Light";
 }
+
 #link {
     width: 80%;
     padding: 10px;
@@ -291,6 +300,7 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
     font-family: "Mont-Light";
 }
+
 .destop-nav-bar .link a {
     text-decoration: none;
     margin: 0px 4px;
@@ -468,17 +478,17 @@ body::-webkit-scrollbar-thumb {
     padding-right: 10px;
 }
 
-.aboutImgdiv {
+.aboutImgdivOne {
     width: 320px;
     height: 550px;
 }
 
-.aboutImg {
+.aboutImgOne {
     width: 320px;
     height: 545px;
 }
 
-.aboutImg img {
+.aboutImgOne img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -489,12 +499,12 @@ body::-webkit-scrollbar-thumb {
     height: 275px;
 }
 
-.aboutImgDiv {
+.aboutImgDiv11 {
     width: 320px;
     height: 270px;
 }
 
-.aboutImgDiv img {
+.aboutImgDiv11 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -741,7 +751,7 @@ body::-webkit-scrollbar-thumb {
 
 .bestsallImg {
     width: 100%;
-    height: 410px;
+    height: 450px;
 }
 
 .bestsallImg img {
@@ -760,11 +770,81 @@ body::-webkit-scrollbar-thumb {
     color: #fff;
 }
 
+.intro {
+    font-size: 16px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.intro p {
+    margin-bottom: 0;
+}
+
+.people {
+    padding: 50px 0;
+    cursor: pointer;
+}
+
+.item {
+    margin-bottom: 30px;
+}
+
+.item .box {
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 280px;
+    position: relative;
+    overflow: hidden;
+}
+
+.item .cover {
+    position: absolute;
+    top: 35px;
+    left: 23px;
+    width: 85%;
+    height: 85%;
+    background-color: #CDBDAE;
+    transition: opacity 0.15s ease-in;
+    opacity: 0;
+    padding-top: 140px;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+}
+
+.item:hover .cover {
+    opacity: .8;
+    display: block;
+}
+
+.cover h6 {
+    color: #fff;
+    font-family: "Poppins-Light";
+    font-size: 20px;
+}
+
+.cover p {
+    color: #fff;
+    font-family: "Poppins-Bold";
+    font-size: 20px;
+}
+
+.cover i {
+    color: #fff;
+    font-size: 25px;
+}
+
+.item:hover .buleDiv {
+    /* display: none; */
+    visibility: hidden;
+}
+
 /* ==========Home Best Salling Product Section Close=========== */
 
 /* ==========Home Client Section Open=========== */
 .clientSec {
-    margin-bottom: 2rem;
+    margin-bottom: 6rem;
 }
 
 .divClient {
@@ -855,6 +935,14 @@ body::-webkit-scrollbar-thumb {
 
 .overlay h6 {
     color: #fff;
+    font-family: "Mont-Bold";
+    font-size: 20px;
+}
+
+.overlay p {
+    color: #fff;
+    font-family: "Mont-Light";
+    font-size: 15px;
 }
 
 .play-font {
@@ -1043,6 +1131,12 @@ body::-webkit-scrollbar-thumb {
 
 /* ==========Home Client Section Closed=========== */
 /* ==========Home Footer Section Open=========== */
+.footer {
+    background-color: #F2F2F2;
+}
+#bottom{
+    background-color: #004C4C;
+}
 .footer-img {
     width: 200px;
     /* margin: auto; */
@@ -1050,21 +1144,25 @@ body::-webkit-scrollbar-thumb {
 }
 
 .footer p {
-    color: #000;
-    font-family: "Mont-Light";
+    color: #787C85;
+    font-family: "Mont-Bold";
 }
 
 .footer ul li a {
     text-decoration: none;
     padding: 8px;
     margin-left: 0;
-    color: #000;
+    color: #787C85;
     font-family: "Mont-Light";
     padding-left: 0;
 }
 
+.footer ul li {
+    padding-bottom: 10px;
+}
+
 .footer ul li a:hover {
-    color: #09f;
+    color: #41607F;
 }
 
 .footerCont ul li i {
@@ -1073,10 +1171,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .footerIcondiv {
-    background-color: #fff;
     width: 25px;
     height: 25px;
-    border-radius: 25px;
 }
 
 .footerIcondiv,
@@ -1087,51 +1183,591 @@ body::-webkit-scrollbar-thumb {
 }
 
 .footerIcondiv i {
-    color: #000;
+    color: #41607F;
 }
-
+#footerIcondiv i{
+    color: #666666;
+}
 .footer-bottom span {
-    color: #000;
+    color: #fff;
     font-family: "Poppins-Light";
 }
 
+.footerCont i {
+    color: #41607F;
+}
+
+.joinMail h5 {
+    color: #787C85;
+    font-family: "Balgin-Bold";
+    padding-top: 1rem;
+}
+
+.joinMail input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #666666;
+    color: #000;
+    background: transparent;
+    font-family: "Mont-Light";
+}
+
 .footer-bottom span:hover {
-    color: #09f;
+    color: #000;
     cursor: pointer;
 }
 
-/* ==========Home Footer Section Closed=========== */
+.footer-bottom {
+    background-color: #41607F;
+    padding: 15px;
+}
 
-/*========== About page Css Open============*/
-.bannner2{
-    background: url("../images/1x/packages.png");
+/* ==========Home Footer Section Closed=========== */
+/* Home 2 Page Css Open*/
+.bannerHome2 {
+    background: linear-gradient(90deg, #275A55 80%, #F6F0E4 20%);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
+    min-height: 750px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bannerHome2 h1 {
+    color: #FFF;
+    font-family: "Balgin-Bold";
+}
+
+.bannerHome2 p {
+    color: #FFF;
+    font-family: "Mont-Light";
+}
+
+.bannerHome2 span {
+    color: #FFF;
+    font-family: "Balgin-Light-Sm";
+}
+
+.btnButtonH {
+    background-color: #DBB43F;
+    font-family: "Mont-Light";
+    color: #fff;
+    padding: 12px 13px;
+    border: none;
+    font-size: 15px;
+}
+
+.btnButtonH:hover {
+    background-color: #fff;
+    border: 1px solid #DBB43F;
+    color: #000;
+}
+
+.bannerHometwo {
+    width: 900px;
+    height: 550px;
+}
+
+.bannerHomeImg {
+    width: 100%;
+    height: 550px;
+}
+
+.bannerHomeImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ==========abouts section css open============== */
+.aboutHome2sec {
+    height: 750px;
+    margin-top: 5rem;
+}
+
+.productHome {
+    height: 650px;
+    width: 55%;
+}
+
+.productHome1 {
+    width: 45%;
+    height: 650px;
+}
+
+.aboutImg {
+    width: 380px;
+    height: 620px;
+}
+
+.aboutImgDiv {
+    width: 100%;
+    height: 620px;
+}
+
+.aboutImgDiv img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.aboutImg1 {
+    width: 380px;
+    height: 500px;
+}
+
+.aboutImgDiv1 {
+    width: 100%;
+    height: 500px;
+}
+
+.aboutImgDiv1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.padding {
+    padding: 0px;
+}
+
+.aboutWidth {
+    width: 100%;
+}
+
+.mainDiv {
+    width: 100%;
+}
+
+.productHome1 h2 {
+    color: #000;
+    font-family: "Balgin-Bold";
+    padding-top: 1rem;
+}
+
+.productHome1 h6 {
+    color: #000;
+    font-family: "Balgin-Extra-Light-Sm";
+}
+
+.productHome1 span {
+    color: #000;
+    font-family: "Balgin-Bold";
+    font-size: 20px;
+}
+
+.productHome1 p {
+    color: #4D4D4D;
+    font-family: "Mont-Light";
+    font-size: 17px;
+    line-height: 1.5;
+    width: 90%;
+}
+
+/* ==========abouts section css open======== */
+.bestSallinghome2 {
+    min-height: 700px;
+    /* background-color: #007aff; */
+    position: relative;
+}
+
+.posDiv {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 400px;
+    height: 200px;
+    background-color: #275A55;
+    z-index: -1;
+}
+
+.bestMian {
+    width: 100%;
+}
+
+.leftMianDiv {
+    width: 70%;
+    /* background-color: #8b0129; */
+    height: 600px;
+    margin-top: 5rem;
+}
+
+.rightMaindiv {
+    width: 30%;
+    /* background-color: #343838; */
+    height: 600px;
+    margin-top: 5rem;
+}
+
+.rightMaindiv h2 {
+    color: #275A55;
+    font-family: "Balgin-Bold";
+    margin-left: 2rem;
+    padding-top: 1rem;
+}
+
+.left {
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+.rightMaindiv span {
+    color: #4D4D4D;
+}
+
+.rightMaindivinner {
+    width: 100%;
+    height: 590px;
+    position: relative;
+    cursor: pointer;
+    /* background-color: #000708; */
+}
+
+.rightMaindivinner:hover .iconDiv {
+    display: block;
+    transition: opacity 0.15s ease-in;
+}
+
+.iconDiv .fa-heart {
+    color: #ffff;
+    padding-top: 10px;
+}
+
+.iconDiv .fa-cart-shopping {
+    color: #ffff;
+}
+
+.iconDiv {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 50px;
+    height: 70px;
+    background-color: #DBB43F;
+    border-bottom-left-radius: 38px;
+    display: none;
+    transition: .5s ease;
+}
+
+.whiteDiv {
+    position: absolute;
+    width: 100%;
+    height: 140px;
+    bottom: 0px;
+    left: 0px;
+    /* background-color: #000; */
+    padding: 20px;
+}
+
+.whiteDiv h4 {
+    font-family: "Poppins-Light";
+    color: #4D4D4D;
+    padding-top: 10px;
+}
+
+.whiteDiv span {
+    font-family: "Poppins-Bold";
+    color: #4D4D4D;
+    text-align: center;
+    font-size: 19px;
+}
+
+.rightMaindivinnerImg {
+    width: 100%;
+    height: 450px;
+}
+
+.rightMaindivinnerImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* =================Good Things Section Css=================== */
+.goodMian {
+    width: 100%;
+    background-color: #000708;
     min-height: 500px;
+}
+
+/* =================Good Things Section Css=================== */
+
+/* Home 2 Page Css Closed*/
+
+/*========== About page Css Open============*/
+.bannner2 {
+    background: url("../images/1x/aboutBanner.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 400px;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 0;
 }
-.bannner2::after{
+
+.bannner2::after {
     content: "";
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-    background-image: url("../images/1x/overlay.png");
+    background-image: url("../images/1x/greenOverlay.png");
     opacity: 0.8;
     z-index: -1;
 }
-.bannner2 h1{
+
+.bannner2 h1 {
     color: #fff;
     font-family: "Balgin-Bold";
 }
+
+.homeProductAbout h2 {
+    color: #275A55;
+    font-family: "Balgin-Bold";
+}
+
+.homeProductAbout span {
+    color: #000;
+    font-family: "Balgin-Bold";
+    font-size: 20px;
+}
+
 /*========== About page Css Closed==========*/
+
+/*========== Wish-List page Css Open==========*/
+.bannerWish {
+    width: 100%;
+    min-height: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bannerWish h1 {
+    color: #000;
+    font-family: "Balgin-Bold";
+}
+
+.wishDiv {
+    width: 100%;
+    height: 560px;
+    position: relative;
+    /* background-color: #007aff; */
+}
+
+.wishDivInner {
+    width: 100%;
+    height: 450px;
+}
+
+.wishDivInner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.wishWhite {
+    position: absolute;
+    width: 100%;
+    height: 110px;
+    bottom: 0px;
+    left: 0px;
+    /* background-color: #000; */
+    padding: 2px;
+}
+
+.wishWhite h4 {
+    font-family: "Poppins-Light";
+    color: #4D4D4D;
+    padding-top: 10px;
+}
+
+.wishWhite span {
+    font-family: "Poppins-Bold";
+    color: #4D4D4D;
+    text-align: center;
+    font-size: 19px;
+}
+.iconDiv1 {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 50px;
+    height: 70px;
+    background-color: #DBB43F;
+    border-bottom-left-radius: 38px;
+    display: none;
+    transition: .5s ease;
+}
+.iconDiv1 .fa-heart {
+    color: #ffff;
+    padding-top: 10px;
+}
+.iconDiv1 .fa-cart-shopping {
+    color: #ffff;
+}
+.wishDiv:hover .iconDiv1 {
+    display: block;
+    transition: opacity 0.15s ease-in;
+}
+/*========== Wish-List page Css Closed==========*/
+/*========== Contact page Css Open============*/
+.contactMain{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 600px; */
+}
+.contactMain .leftDiv{
+    width: 50%;
+    /* height: 600px; */
+    position: relative;
+}
+.contactMain .rightDiv{
+    width: 50%;
+    height: 700px;
+    padding-left: 4rem;
+}
+.contactMain .rightDiv h3{
+    color: #1A1A1A;
+    font-family: "Balgin-Bold";
+    margin-top: 5rem;
+}
+.rightDiv label{
+    color: #000;
+    font-family: "Mont-Bold";
+}
+.rightDiv input{
+    border:2px solid #D1D3D4;
+    border-radius: 0px;
+    width: 100%;
+}
+.rightDiv textarea{
+    border:2px solid #D1D3D4;
+    border-radius: 0px;
+    width: 100%;
+    min-height: 120px;
+    max-height: 120px;
+}
+.subBtn{
+    background-color: #DBB43F;
+    color: #000;
+    padding: 7px 25px;
+    border: none;
+    font-family: "Mont-Bold";
+}
+.subBtn:hover{
+    background-color: #fff;
+    border: 1px solid #DBB43F;
+}
+/*========== Contact page Css Closed============*/
+/*========== Our project page Css Open============*/
+.bannner3 {
+    background: url("../images/1x/aboutBanner.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 400px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+.bannner3::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url("../images/1x/greenOverlay.png");
+    opacity: 0.8;
+    z-index: -1;
+}
+.bannner3 h1 {
+    color: #fff;
+    font-family: "Balgin-Bold";
+    text-align: center;
+}
+.bannner3 p {
+    color: #fff;
+    font-family: "Mont-Light";
+    text-align: center;
+}
+.projectQnt h2 {
+    color: #275A55;
+    font-family: "Balgin-Bold";
+    padding-top: 2rem;
+    text-align: center;
+}
+.projectQnt span {
+    color: #000;
+    font-family: "Balgin-Bold";
+    font-size: 20px;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+.projDiv{
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+.projDivImg{
+    width: 100%;
+    height: 500px;
+}
+.projDivImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.projDivImgWhite {
+    position: absolute;
+    width: 100%;
+    height: 90px;
+    bottom: 0px;
+    left: 0px;
+    padding: 15px;
+}
+.projDivImgWhite h4{
+    color: #fff;
+    font-family: "Balgin-Bold";
+}
+.projDivImgWhite span{
+    color: #fff;
+    font-family: "Balgin-Extra-Light-Sm";
+}
+.projDivImgWhite h5{
+    color: #fff;
+    font-family: "Balgin-Bold";
+}
+
+.projDiv:hover{
+    max-width: 100%;
+    transition: all .25s ease-out;
+    transform: scale(1.1);
+    transform-origin: center;
+    cursor: pointer;
+}
+
+/* .projDiv:hover {
+    transform: scale(1.0);
+} */
+
+/*========== Our project page Css Closed============*/
 
 
 
@@ -1205,6 +1841,11 @@ body::-webkit-scrollbar-thumb {
     #main-content {
         display: none;
     }
+
+    .bannerHometwo {
+        width: 100%;
+        height: 550px;
+    }
 }
 
 @media only screen and (max-width:820px) {
@@ -1219,6 +1860,11 @@ body::-webkit-scrollbar-thumb {
     #btn {
         display: block;
     }
+
+    .bannerHometwo {
+        width: 100%;
+        height: 550px;
+    }
 }
 
 @media only screen and (max-width:768px) {
@@ -1228,6 +1874,11 @@ body::-webkit-scrollbar-thumb {
 
     #btn {
         display: block;
+    }
+
+    .bannerHometwo {
+        width: 100%;
+        height: 550px;
     }
 }
 
@@ -1274,6 +1925,24 @@ body::-webkit-scrollbar-thumb {
         padding-left: 2px;
     }
 
+    .bannerHometwo {
+        width: 100%;
+        height: 550px;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    .textCenter {
+        justify-content: center;
+    }
+
+    .footer-img {
+        width: 100%;
+        /* margin: auto; */
+        height: 100px;
+    }
 }
 
 @media only screen and (max-width:375px) {

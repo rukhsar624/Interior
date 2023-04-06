@@ -29,7 +29,7 @@
       } else {
         $("#navbar-fixed-top").css("background", "none");
         $("#navbar-fixed-top").css("box-shadow", "none");
-        $(".destop-nav-bar .header_links").css("color", "#fff");
+        $(".destop-nav-bar .header_links").css("color", "#000");
         $(".destop-nav-bar .logo h1").css("color", "#1a1a1a");
         $(".destop-nav-bar .header_links.active").css(
           "border-bottom",
