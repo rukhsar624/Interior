@@ -1768,6 +1768,43 @@ body::-webkit-scrollbar-thumb {
 } */
 
 /*========== Our project page Css Closed============*/
+/*========== Sign page Css Open============*/
+.signIn {
+    background: url("../images/1x/loginBg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 600px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+.signIn h2{
+    color: #fff;
+}
+.signIn form input, .forgetPassword form input {
+    width: 100%;
+    padding: 15px;
+    color: #F1F1F1;
+    border: 1px solid #F1F1F1;
+    background-color:#fff;
+}
+.eyeDiv2 {
+    position: relative;
+}
+#eye2 {
+    position: absolute;
+    content: "";
+    right: 20px;
+    top: 20px;
+    color: #fff;
+}
+/*========== Sign page Css Closed============*/
+
+
 
 
 
