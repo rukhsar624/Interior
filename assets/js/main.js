@@ -41,8 +41,8 @@
         $(".hamburger.active div").css(
           "background", "#00000"
         );
-        $(".destop-nav-bar .fa-solid " ).css("color" ,"#fff");
-        $(".destop-nav-bar .fa-regular " ).css("color" ,"#fff");
+        $(".destop-nav-bar .fa-solid " ).css("color" ,"#000");
+        $(".destop-nav-bar .fa-regular " ).css("color" ,"#000");
         $(".destop-nav-bar .example" ).css("border" ,"none");
       }
     });
@@ -302,6 +302,222 @@ var swiper = new Swiper(".mySwiper", {
       
       });
       // 
+      // Swiper Slider4
+var swiper = new Swiper(".mySwiper4", {
+	slidesPerView: 3,
+	spaceBetween: 30,
+	loop:true,
+	navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      // autoplay: {
+      //   delay: 3000,
+      //   disableOnInteraction: false,
+      //   },
+	breakpoints: {
+	  // when window width is >= 320px
+	  768: {
+		slidesPerView: 3,
+		spaceBetween: 20
+	  },
+	  375: {
+		slidesPerView: 1,
+		spaceBetween: 20
+	  },
+	  320: {
+		slidesPerView: 1,
+		spaceBetween: 20
+	  },
+	  280: {
+		slidesPerView: 1,
+		spaceBetween: 20
+	  },
+	  414: {
+		slidesPerView: 1,
+		spaceBetween: 20
+	  },
+	  1920: {
+		slidesPerView: 2,
+		spaceBetween: 20
+	  },
+	  1600: {
+		slidesPerView: 2,
+		spaceBetween: 20
+  
+	  },
+	  1366: {
+		slidesPerView: 2,
+		spaceBetween: 10
+	  },
+	  1400: {
+		slidesPerView: 2,
+		spaceBetween: 20
+	  },
+    1366: {
+      slidesPerView: 2,
+      spaceBetween: 10
+      },
+      2560: {
+        slidesPerView: 2,
+        spaceBetween: 20
+        },
+        1024: {
+          slidesPerView: 2,
+          spaceBetween: 20
+          }
+	}
+  
+  });
+  // 
+  // Swiper Slider6
+var swiper = new Swiper(".mySwiper5", {
+	slidesPerView: 3,
+	spaceBetween: 30,
+	loop:true,
+	navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      // autoplay: {
+      //   delay: 3000,
+      //   disableOnInteraction: false,
+      //   },
+	breakpoints: {
+	  // when window width is >= 320px
+	  768: {
+		slidesPerView: 3,
+		spaceBetween: 20
+	  },
+	  375: {
+		slidesPerView: 1,
+		spaceBetween: 20
+	  },
+	  320: {
+		slidesPerView: 1,
+		spaceBetween: 20
+	  },
+	  280: {
+		slidesPerView: 1,
+		spaceBetween: 20
+	  },
+	  414: {
+		slidesPerView: 1,
+		spaceBetween: 20
+	  },
+	  1920: {
+		slidesPerView: 4,
+		spaceBetween: 20
+	  },
+	  1600: {
+		slidesPerView: 4,
+		spaceBetween: 20
+  
+	  },
+	  1366: {
+		slidesPerView: 4,
+		spaceBetween: 10
+	  },
+	  1400: {
+		slidesPerView: 4,
+		spaceBetween: 20
+	  },
+    1366: {
+      slidesPerView: 4,
+      spaceBetween: 10
+      },
+      2560: {
+        slidesPerView: 4,
+        spaceBetween: 20
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 20
+          }
+	}
+  
+  });
+  // 
+  // Swiper Slider6
+var swiper = new Swiper(".mySwiper6", {
+	slidesPerView: 3,
+	spaceBetween: 30,
+	loop:true,
+	navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      // autoplay: {
+      //   delay: 3000,
+      //   disableOnInteraction: false,
+      //   },
+	breakpoints: {
+	  // when window width is >= 320px
+	  768: {
+		slidesPerView: 3,
+		spaceBetween: 20
+	  },
+	  375: {
+		slidesPerView: 1,
+		spaceBetween: 20
+	  },
+	  320: {
+		slidesPerView: 1,
+		spaceBetween: 20
+	  },
+	  280: {
+		slidesPerView: 1,
+		spaceBetween: 20
+	  },
+	  414: {
+		slidesPerView: 1,
+		spaceBetween: 20
+	  },
+	  1920: {
+		slidesPerView: 4,
+		spaceBetween: 20
+	  },
+	  1600: {
+		slidesPerView: 4,
+		spaceBetween: 20
+  
+	  },
+	  1366: {
+		slidesPerView: 4,
+		spaceBetween: 10
+	  },
+	  1400: {
+		slidesPerView: 4,
+		spaceBetween: 20
+	  },
+    1366: {
+      slidesPerView: 4,
+      spaceBetween: 10
+      },
+      2560: {
+        slidesPerView: 4,
+        spaceBetween: 20
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 20
+          }
+	}
+  
+  });
+  // 
       // eye 
 $(".toggle-password").click(function() {
 
@@ -313,7 +529,39 @@ $(".toggle-password").click(function() {
     input.attr("type", "password");
   }
 });
-  
+// price range slider
+var lowerSlider = document.querySelector('#lower');
+var  upperSlider = document.querySelector('#upper');
 
+document.querySelector('#two').value=upperSlider.value;
+document.querySelector('#one').value=lowerSlider.value;
+
+var  lowerVal = parseInt(lowerSlider.value);
+var upperVal = parseInt(upperSlider.value);
+
+upperSlider.oninput = function () {
+    lowerVal = parseInt(lowerSlider.value);
+    upperVal = parseInt(upperSlider.value);
+
+    if (upperVal < lowerVal + 4) {
+        lowerSlider.value = upperVal - 4;
+        if (lowerVal == lowerSlider.min) {
+        upperSlider.value = 4;
+        }
+    }
+    document.querySelector('#two').value=this.value
+};
+
+lowerSlider.oninput = function () {
+    lowerVal = parseInt(lowerSlider.value);
+    upperVal = parseInt(upperSlider.value);
+    if (lowerVal > upperVal - 4) {
+        upperSlider.value = lowerVal + 4;
+        if (upperVal == upperSlider.max) {
+            lowerSlider.value = parseInt(upperSlider.max) - 4;
+        }
+    }
+    document.querySelector('#one').value=this.value
+};
 
 
