@@ -83,6 +83,37 @@
   })
   (jQuery);
 // 
+// counter button
+let counter = 0;
+
+function increment() {
+  counter++;
+}
+
+function decrement() {
+  counter--;
+}
+
+function get() {
+  return counter;
+}
+
+const inc = document.getElementById("increment");
+const input = document.getElementById("input");
+const dec = document.getElementById("decrement");
+
+inc.addEventListener("click", () => {
+  increment();
+  input.value = get();
+});
+
+dec.addEventListener("click", () => {
+  if (input.value > 0) {
+    decrement();
+  }
+  input.value = get();
+});
+
 // Swiper Slider1
 var swiper = new Swiper(".mySwiper", {
 	slidesPerView: 3,
@@ -96,10 +127,10 @@ var swiper = new Swiper(".mySwiper", {
         el: ".swiper-pagination",
         clickable: true,
       },
-      autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-        },
+      // autoplay: {
+      //   delay: 3000,
+      //   disableOnInteraction: false,
+      //   },
 	breakpoints: {
 	  // when window width is >= 320px
 	  768: {
@@ -175,7 +206,7 @@ var swiper = new Swiper(".mySwiper", {
     breakpoints: {
       // when window width is >= 320px
       768: {
-      slidesPerView: 3,
+      slidesPerView: 2,
       spaceBetween: 20
       },
       375: {
@@ -230,7 +261,7 @@ var swiper = new Swiper(".mySwiper", {
     // swiper Slider3
     var swiper = new Swiper(".mySwiper3", {
       slidesPerView: 3,
-      spaceBetween: 30,
+      spaceBetween: 0,
       loop:true,
       navigation: {
             nextEl: ".swiper-button-next",
@@ -266,7 +297,7 @@ var swiper = new Swiper(".mySwiper", {
         spaceBetween: 0
         },
         414: {
-        slidesPerView: 1,
+        slidesPerView: 3,
         spaceBetween: 0
         },
         1920: {
@@ -311,10 +342,10 @@ var swiper = new Swiper(".mySwiper4", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
+      // pagination: {
+      //   el: ".swiper-pagination",
+      //   clickable: true,
+      // },
       // autoplay: {
       //   delay: 3000,
       //   disableOnInteraction: false,
@@ -409,8 +440,12 @@ var swiper = new Swiper(".mySwiper5", {
 		slidesPerView: 1,
 		spaceBetween: 20
 	  },
+    390: {
+      slidesPerView: 4,
+      spaceBetween: 20
+      },
 	  414: {
-		slidesPerView: 1,
+		slidesPerView: 4,
 		spaceBetween: 20
 	  },
 	  1920: {
@@ -563,5 +598,3 @@ lowerSlider.oninput = function () {
     }
     document.querySelector('#one').value=this.value
 };
-
-

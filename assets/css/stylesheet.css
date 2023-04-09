@@ -44,10 +44,17 @@ body::-webkit-scrollbar-thumb {
     src: url("../../assets/fonts/Montserrat/Montserrat-Bold.ttf");
 }
 @font-face {
+  font-family: "Mont-SemiBold";
+  src: url("../../assets/fonts/Montserrat/Montserrat-SemiBold.ttf");
+}
+@font-face {
     font-family: "Balgin-Bold";
     src: url("../../assets/fonts/balgin/Balgin\ Bold.ttf");
 }
-
+@font-face {
+  font-family: "Balgin-Bold-Extra-Light";
+  src: url("../../assets/fonts/balgin/Balgin\ Extra\ Light.ttf");
+}
 @font-face {
     font-family: "Balgin-Light-Sm";
     src: url("../../assets/fonts/balgin/Balgin\ Light\ Sm\ Condensed.ttf");
@@ -427,30 +434,34 @@ body::-webkit-scrollbar-thumb {
     transform: translateY(-50px);
 }
 
-.Homebanner .swiper-pagination-fraction,
+.Homebanner .right .swiper-pagination-fraction,
 .swiper-pagination-custom,
 .swiper-horizontal>.swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal {
     bottom: 5px;
-    left: 0;
+    left: 0!important;
     width: 100%;
 }
-
-.Homebanner .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
-.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet .active {
-    background-color: #CDBDAE !important;
-    border: 3px solid #CDBDAE;
-    width: 15px;
-    height: 15px;
-}
-
-.Homebanner .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+/* .Homebanner .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+  bottom: 5px;
+  left: 0;
+  width: 100%;
+} */
+.Homebanner .right .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
     border: 3px solid #fff;
     background-color: transparent;
     width: 15px;
     height: 15px;
 }
+.Homebanner .right .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet-active {
+    background-color: #CDBDAE;
+    width: 15px;
+    height: 15px;
+}
+
+
 
 /* ==========Home Banner Css Closed=========== */
 /* ==========Home About Section Css Closed=========== */
@@ -568,18 +579,22 @@ body::-webkit-scrollbar-thumb {
 .homeProduct {
     background-color: #fff;
     margin-top: 6rem;
-    margin-bottom: 6rem;
-    height: 550px;
-    display: flex;
+    min-height: 750px;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 }
-
+.height{
+  height: 550px;
+}
 .homeProduct h2 {
     color: #41607F;
     font-family: "Balgin-Bold";
-}
 
+}
+.mLeft{
+  margin-left: 9rem;
+}
 .homeProduct span {
     color: #787C85;
     font-family: "Balgin-Bold";
@@ -592,7 +607,20 @@ body::-webkit-scrollbar-thumb {
     font-size: 15px;
     padding-top: 10px;
 }
-
+.homeProductAbout{
+  width: 100%;
+  min-height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.projectLeft1{
+  width: 40%;
+  padding-left: 9rem;
+}
+.projectLeft1inner{
+  height: 450px;
+}
 .productSlider {
     position: absolute;
     right: 0;
@@ -605,7 +633,6 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
     height: 550px;
 }
-
 .sliderPrdImg {
     width: 100%;
     height: 550px;
@@ -620,7 +647,8 @@ body::-webkit-scrollbar-thumb {
 .swiper-slide .sliderPrd {
     max-width: 100%;
     transition: all .25s ease-out;
-    transform: scale(0.9);
+    /* transform: scaleY(0.9); */
+    transform: scaleY(0.8);
     transform-origin: center;
 }
 
@@ -628,26 +656,35 @@ body::-webkit-scrollbar-thumb {
     transform: scale(1.0);
 }
 
-.homeProduct .swiper-pagination {
-    padding-top: 6rem
+#homeProduct .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+  bottom: 13px!important;
+  left: 260px!important;
+    width: 100%!important;
 }
-
-.homeProduct .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
-.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet-active {
-    color: #007aff;
-    background-color: transparent;
-    width: 18px;
-    height: 18px;
+.swiperNumhr{
+  background-color: #DBB43F!important;
+    width: 33%!important;
+    height: 3px!important;
+    position: absolute;
+    bottom: 22px!important;
+    left: 340px!important;
 }
-
-.homeProduct .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+#homeProduct .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-    color: #000;
-    background-color: transparent;
-    width: 18px;
-    height: 18px;
+    color: #CCCCCC!important;
+    background-color: transparent!important;
+    width: 18px!important;
+    height: 18px!important;
+    font-family: "Poppins-Light"!important; 
+    font-size: 15px!important;
 }
-
+#homeProduct .siper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet-active {
+  color: #000!important;
+  transition: all .25s ease-out!important;
+    /* transform: scaleY(0.9); */
+    transform: scaleX(0.8)!important;
+}
 /* ==========Home Product Section Close=========== */
 /* ==========Home Good Thimgs Section Open=========== */
 .goodThings {
@@ -1102,8 +1139,18 @@ body::-webkit-scrollbar-thumb {
 .clientSec .swiper-wrapper {
     margin-bottom: 5rem;
 }
-
-.clientDiv .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.clientP{
+  background-color: #000000;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+}
+.clientSec.swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 5px;
+    left: 0!important;
+    width: 100%;
+}
+.clientSec.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
     background-color: #41607F;
     border: none;
@@ -1113,7 +1160,7 @@ body::-webkit-scrollbar-thumb {
     height: 18px;
 }
 
-.clientDiv .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.clientSec .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet-active {
     width: 48px;
     height: 18px;
@@ -1124,14 +1171,7 @@ body::-webkit-scrollbar-thumb {
     transition: all .3s;
 }
 
-.clientDiv .swiper-pagination-fraction,
-.swiper-pagination-custom,
-.swiper-horizontal>.swiper-pagination-bullets,
-.swiper-pagination-bullets.swiper-pagination-horizontal {
-    bottom: 5px;
-    left: 0;
-    width: 100%;
-}
+
 
 /* ==========Home Client Section Closed=========== */
 /* ==========Home Footer Section Open=========== */
@@ -1272,7 +1312,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .bannerHometwo {
-    width: 900px;
+    width: 100%;
     height: 550px;
 }
 
@@ -1294,17 +1334,18 @@ body::-webkit-scrollbar-thumb {
 }
 
 .productHome {
-    height: 650px;
+    /* height: 650px; */
     width: 55%;
 }
 
 .productHome1 {
-    width: 45%;
-    height: 650px;
+    width: 43%;
+    /* height: 650px; */
 }
 
 .aboutImg {
-    width: 380px;
+    width: 360px;
+    /* width: 100%; */
     height: 620px;
 }
 
@@ -1320,7 +1361,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .aboutImg1 {
-    width: 380px;
+    width: 360px;
+    /* width: 100%; */
     height: 500px;
 }
 
@@ -1413,7 +1455,15 @@ body::-webkit-scrollbar-thumb {
     margin-left: 2rem;
     padding-top: 1rem;
 }
-
+.newrightMaindiv h2 {
+  color: #275A55;
+  font-family: "Balgin-Bold";
+  margin-left: 2rem;
+  padding-top: 1rem;
+}
+.newrightMaindiv span{
+  color: #4D4D4D;
+}
 .left {
     margin-left: 2rem;
     margin-top: 2rem;
@@ -1479,7 +1529,11 @@ body::-webkit-scrollbar-thumb {
     text-align: center;
     font-size: 19px;
 }
-
+.rightMaindivinnerImg123{
+  width: 100%;
+    height: 450px;
+    margin: auto;
+}
 .rightMaindivinnerImg {
     width: 100%;
     height: 450px;
@@ -1556,7 +1610,7 @@ body::-webkit-scrollbar-thumb {
 /* =================Good Things Section Css Closed=================== */
 /* =================Home2 Client Section Css Opne=================== */
 .clientHome2{
-    min-height: 500px;
+    min-height: 600px;
 }
 .clientHome2 h2{
     font-family: "Balgin-Bold";
@@ -1579,16 +1633,96 @@ body::-webkit-scrollbar-thumb {
 }
 /* =================Home2 Client Section Css Closed=================== */
 /* =================Home2 Newsletter Section Css Open=================== */
+.newLetter{
+  /* background-color: #004C4C; */
+    /* border-left: 47em solid #fff; */
+    background: linear-gradient(90deg, #FFF 45%, #004C4C 45%);
+  min-height: 710px;
+  margin-top: 4rem;
+}
+.newmain{
+  width: 100%;
+}
+.newmain .newleft{
+  width: 50%;
+  height: 650px;
+
+}
+.leftImage{
+  width: 790px;
+  height: 600px;
+  margin-top: 3.5rem;
+}
+.leftImageDiv{
+  width: 100%;
+  height: 600px;
+}
+.leftImageDiv img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-right:10px solid #fff;
+  border-top:10px solid #fff;
+  border-bottom:10px solid #fff;
+
+
+}
+.newmain .newright{
+  width: 50%;
+  height: 650px;
+  display: flex;
+  justify-content:center ;
+  flex-direction: column;
+}
+.newmain .newright h2{
+  color: #fff;
+  font-family: "Balgin-Bold";
+  margin-left: 2rem;
+  font-size: 2.5rem;
+}
+.newmain .newright input{
+  width: 80%;
+  background-color: transparent;
+  padding: 20px;
+  margin-left: 2rem;
+  border: 1px solid #fff;
+  font-family: "Mont-Light";
+  margin-top: 20px;
+}
 .clientSliderDiv{
     width: 600px;
     height: 400px;
-    background-color: #E6E6E6;
+    background-image: url("../images/1x/clientDiv.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     position: relative;
+    border-radius: 10px;
+    margin: auto;
 }
 .clientSliderImgDiv{
-    width: 500px;
+    width: 600px;
     height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.quoText{
+  width: 500px;
+    height: 320px;
     margin: auto;
+  
+}
+.quoText i{
+  color: #DBB43F;
+  font-size: 3rem;
+}
+.quoText p{
+  font-family: "Mont-Light";
+  color: #000;
+  font-size: 15px;
+
 }
 .tri{
     position: absolute;
@@ -1602,6 +1736,44 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+.h2SliderImg2{
+  width: 30%;
+  height: 100px;
+  margin: auto;
+  margin-top: 2rem;
+}
+.h2SliderImg212{
+  width: 60%;
+    height: 100px;
+    /* margin: unset; */
+    display: flex;
+    margin-left: 48px;
+}
+.h2SliderImg212 img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.jText{
+  color:#004C4C;
+  font-family: "Mont-Light";
+  text-align: center;
+}
+.clientHome2 .swiper-button-next,
+.swiper-button-prev {
+    color: #fff!important;
+    background-color: #004C4C!important;
+    padding: 20px!important;
+}
+.clientHome2 .lRbutton .swiper-button-prev:after, .swiper-button-next:after{
+  font-size: 30px!important;
+}
+.lRbutton{
+  bottom: 0;
+  left: 46.5%;
+  height: 70px;
+  width: 7%;
 }
 /* =================Home2 Newsletter Section Css Closed=================== */
 .product-details{
@@ -1880,7 +2052,7 @@ body::-webkit-scrollbar-thumb {
   .inpBox {
     width: 72%;
     position: relative;
-    border: 1px solid #fff;
+    border: 1px solid #000;
     border: none;
     margin-left: 10px;
 }
@@ -1891,23 +2063,25 @@ body::-webkit-scrollbar-thumb {
     color: #fff;
     border: none;
     background: transparent;
+    
 }
 .inpBox input {
     width: 100%;
     text-align: center;
-    border: 1px solid #fff;
+    border: 1px solid #000;
     border-radius: 5px;
     padding: 5px;
-    color: #fff;
+    color: #000;
     background: transparent;
 }
 .inpBox .plus {
     position: absolute;
     top: 4px;
     right: 10px;
-    color: #fff;
+    color: #000;
     border: none;
     background: transparent;
+    font-size: 15px;
 }
   /*  */
   .product-details .color span:hover{
@@ -2553,6 +2727,14 @@ body::-webkit-scrollbar-thumb {
     margin-top: 150px;
     margin-bottom: 100px;
   }
+  .shoppingCart h3{
+    font-family: "Balgin-Bold-Extra-Light";
+    padding-left: 2rem;
+
+  }
+  .shoppingCart h4{
+    font-family: "Balgin-Bold-Extra-Light";
+  }
   .shoppingCartInnerDiv{
     background-color: #F1F1F1;
       width: 95%;
@@ -2589,13 +2771,13 @@ body::-webkit-scrollbar-thumb {
   .divv11 img{
     width: 100%;
       height: 100%;
-      object-fit: contain;
+      object-fit: cover;
   }
   .textPc{
     padding-left: 1.2rem;
   }
   .textPc span{
-    font-family: Mont-Reg;
+    font-family: "Mont-SemiBold";
     font-size: 12px;
     color: #989898;
   
@@ -2604,10 +2786,11 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
       background-color:transparent;
       border: none;
-      padding: 15px 5px;
+      padding: 15px 20px;
       color: #666666;
       font-size: 12px;
       border: 1px solid #ccc;
+      font-family: "Mont-reg";
   
   }
   .shipping span{
@@ -2700,6 +2883,73 @@ body::-webkit-scrollbar-thumb {
     font-size: 17px;
     line-height: 1.5;
 }
+.mainDivAboutPage{
+  min-height: 650px;
+}
+.leftDivAoutsec{
+  width: 21%;
+  height: 600px;
+  /* background-color: #000; */
+}
+.imgAboutPage{
+  width: 330px;
+  height: 600px;
+}
+.imgAboutPageInner{
+  width: 100%;
+  height: 600px;
+}
+.imgAboutPageInner img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+.rightDivAoutsec{
+  width: 79%;
+  height: 500px;
+  /* background-color: red; */
+
+}
+.secImg{
+  width: 360px;
+  height: 500px;
+  margin-left: 20px;
+  
+}
+.secImgDiv{
+  width: 100%;
+  height: 500px;
+}
+.secImgDiv img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.secImgDivText{
+  width: 90%;
+  height: 500px;
+}
+.secImgDivText h2 {
+  color: #000;
+  font-family: "Balgin-Bold";
+}
+.secImgDivText span {
+  color: #000;
+  font-family: "Balgin-Bold-Extra-Light";
+}
+.secImgDivText p {
+  color: #000;
+  font-family: "Mont-Light";
+  line-height: 2;
+}
+.textAboutDiv p{
+  color: #000;
+  font-family: "Mont-Light";
+  line-height: 2;
+  padding-left: 10px;
+  padding-top: 10px;
+}
 /*========== About page Css Closed==========*/
 /*========== Wish-List page Css Open==========*/
 .bannerWish {
@@ -2785,17 +3035,54 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* min-height: 600px; */
+    min-height: 750px;
 }
 .contactMain .leftDiv{
     width: 50%;
-    /* height: 600px; */
+    height: 750px;
     position: relative;
+}
+.contactMain .leftDiv::after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image:url("../images/1x/contactOverlay.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.overlayDivCont{
+  position: absolute;
+  padding-left: 4rem;
+  padding-top: 10rem;
+  width: 100%;
+  height: 750px;
+  top: 0;
+  left: 0;
+  z-index: 4;
+}
+.overlayDivCont h2{
+  color: #fff;
+  font-family: "Balgin-Bold";
+}
+.overlayDivCont p{
+  color: #fff;
+  font-family: "Mont-Light";
+}
+.overlayDivCont i{
+  padding-right: 15PX;
+  color: #fff;
+  font-size: 25px;
+  padding-top: 10px;
 }
 .contactMain .rightDiv{
     width: 50%;
-    height: 700px;
-    padding-left: 4rem;
+    height: 750px;
+    /* padding-left: 4rem; */
+    padding: 2rem;
 }
 .contactMain .rightDiv h3{
     color: #1A1A1A;
@@ -3618,6 +3905,46 @@ body::-webkit-scrollbar-thumb {
     #btn {
         display: none;
     }
+    .aboutsmDiv{
+      width: 100%;
+    }
+    .aboutsmDivImg{
+      width: 100%;
+    }
+    .aboutImgdivOne , .aboutImgOne{
+      width: 100%;
+    }
+    .aboutImgdiv1 , .aboutImgDiv11{
+      width: 100%;
+    }
+    .aboutImgdiv2 , .aboutImgDiv2{
+      width: 100%;
+    }
+    .clientDiv {
+      width: 100%;
+      height: 410px;
+      position: relative;
+  }
+  .clientDivImg {
+    width: 100%;
+    height: 410px;
+}
+.product-details .card .left-side {
+  width: 40%;
+  background-color: #fff;
+  height: 100%;
+  /* padding: 20px; */
+}
+.product-details .images {
+  height: 500px;
+  width: 100%;
+}
+.product-details .card .right-side {
+  width: 50%;
+  background-color: #fff;
+  height: 100%;
+  padding: 20px;
+}
 }
 
 @media only screen and (max-width:1280px) {
@@ -3654,6 +3981,38 @@ body::-webkit-scrollbar-thumb {
         width: 100%;
         height: 550px;
     }
+    .center {
+      text-align: center;
+  }
+
+  .textCenter {
+      justify-content: center;
+  }
+
+  .footer-img {
+      width: 100%;
+      /* margin: auto; */
+      height: 100px;
+  }
+  .contactMain{
+    flex-wrap: wrap;
+  }
+  .contactMain .leftDiv{
+    width: 100%;
+  }
+  .contactMain .rightDiv{
+    width: 100%;
+    padding-left: 2rem;
+  }
+  .clientDiv {
+    width: 315px;
+    height: 410px;
+    position: relative;
+    margin: auto;
+}
+.mLeft {
+  margin-left: 2rem;
+}
 }
 
 @media only screen and (max-width:768px) {
@@ -3669,11 +4028,71 @@ body::-webkit-scrollbar-thumb {
         width: 100%;
         height: 550px;
     }
+    .center {
+      text-align: center;
+  }
+
+  .textCenter {
+      justify-content: center;
+  }
+
+  .footer-img {
+      width: 100%;
+      /* margin: auto; */
+      height: 100px;
+  }
+  .contactMain{
+    flex-wrap: wrap;
+  }
+  .contactMain .leftDiv{
+    width: 100%;
+  }
+  .contactMain .rightDiv{
+    width: 100%;
+    padding-left: 2rem;
+  }
+  .clientDiv {
+    width: 315px;
+    height: 410px;
+    position: relative;
+    margin: auto;
+}
+.mLeft {
+  margin-left: 2rem;
+}
 }
 
-@media only screen and (max-width:600px) {}
+@media only screen and (max-width:600px) {
+  .center {
+    text-align: center;
+}
 
-@media only screen and (max-width:540px) {}
+.textCenter {
+    justify-content: center;
+}
+
+.footer-img {
+    width: 100%;
+    /* margin: auto; */
+    height: 100px;
+}
+}
+
+@media only screen and (max-width:540px) {
+  .center {
+    text-align: center;
+}
+
+.textCenter {
+    justify-content: center;
+}
+
+.footer-img {
+    width: 100%;
+    /* margin: auto; */
+    height: 100px;
+}
+}
 
 @media only screen and (max-width:414px) {
     .imglogo {
@@ -3732,6 +4151,92 @@ body::-webkit-scrollbar-thumb {
         /* margin: auto; */
         height: 100px;
     }
+    .shoppingCart h4 {
+      padding-left: 2rem;
+    }
+    .contactMain{
+      flex-wrap: wrap;
+    }
+    .contactMain .leftDiv{
+      width: 100%;
+    }
+    .contactMain .rightDiv{
+      width: 100%;
+      padding-left: 2rem;
+    }
+    .overlayDivCont {
+      padding-left: 1rem;
+      padding-top: 5rem;
+  }
+  .mainDiv{
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .productHome{
+    width: 100%;
+  }
+  .productHome1{
+    width: 100%;
+    text-align: center
+  }
+  .productHome1 p {
+    width: 100%;
+}
+.rightMaindivinnerImg123{
+  width: 90%;
+    height: 450px;
+    margin: auto;
+}
+.iconDiv{
+  right:23px;
+}
+.aboutsmDiv{
+  width: 100%;
+}
+.aboutsmDivImg{
+  width: 100%;
+}
+.clientDiv {
+  width: 315px;
+  height: 410px;
+  position: relative;
+  margin: auto;
+}
+.productSlider{
+  position: unset;
+  margin-top: 2rem;
+  width: 90%;
+  margin: auto;
+}
+.mLeft{
+  text-align: center;
+  margin-left: 0rem;
+}
+.swiperNumhr{
+  display:none;
+}
+#homeProduct .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+  display:none;
+}
+.product-details .card .left-side{
+  width: 100%;
+}
+.product-details .card .right-side{
+  width: 100%;
+}
+.product-details .card .form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.product-details .img_girl_left .div1 {
+  width: 100%;
+  background: #F1F1F1;
+}
+.product-details .img_girl_left .div1 div {
+  width: 100%;
+}
 }
 
 @media only screen and (max-width:375px) {
@@ -3743,7 +4248,16 @@ body::-webkit-scrollbar-thumb {
         display: block;
     }
 }
-
+@media only screen and (max-width:390px) {
+  .product-details .img_girl_left .div1 {
+    width: 100%;
+    background: #F1F1F1;
+  }
+  .product-details .img_girl_left .div1 div {
+    width: 100%;
+  }
+  
+}
 @media only screen and (max-width:360px) {}
 
 @media only screen and (max-width:320px) {}
