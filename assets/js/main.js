@@ -83,36 +83,7 @@
   })
   (jQuery);
 // 
-// counter button
-let counter = 0;
 
-function increment() {
-  counter++;
-}
-
-function decrement() {
-  counter--;
-}
-
-function get() {
-  return counter;
-}
-
-const inc = document.getElementById("increment");
-const input = document.getElementById("input");
-const dec = document.getElementById("decrement");
-
-inc.addEventListener("click", () => {
-  increment();
-  input.value = get();
-});
-
-dec.addEventListener("click", () => {
-  if (input.value > 0) {
-    decrement();
-  }
-  input.value = get();
-});
 
 // Swiper Slider1
 var swiper = new Swiper(".mySwiper", {
@@ -135,23 +106,27 @@ var swiper = new Swiper(".mySwiper", {
 	  // when window width is >= 320px
 	  768: {
 		slidesPerView: 3,
-		spaceBetween: 20
+		spaceBetween: 10
 	  },
 	  375: {
-		slidesPerView: 1,
-		spaceBetween: 20
+		slidesPerView: 3,
+		spaceBetween: 10
 	  },
+    390: {
+      slidesPerView: 3,
+      spaceBetween: 10
+      },
 	  320: {
-		slidesPerView: 1,
-		spaceBetween: 20
+		slidesPerView: 3,
+		spaceBetween: 10
 	  },
 	  280: {
-		slidesPerView: 1,
-		spaceBetween: 20
+		slidesPerView: 3,
+		spaceBetween: 10
 	  },
 	  414: {
-		slidesPerView: 1,
-		spaceBetween: 20
+		slidesPerView: 3,
+		spaceBetween: 10
 	  },
 	  1920: {
 		slidesPerView: 3,
@@ -159,7 +134,7 @@ var swiper = new Swiper(".mySwiper", {
 	  },
 	  1600: {
 		slidesPerView: 3,
-		spaceBetween: 20
+		spaceBetween: 10
   
 	  },
 	  1366: {
@@ -260,7 +235,7 @@ var swiper = new Swiper(".mySwiper", {
     //  
     // swiper Slider3
     var swiper = new Swiper(".mySwiper3", {
-      slidesPerView: 3,
+      slidesPerView: 4,
       spaceBetween: 0,
       loop:true,
       navigation: {
@@ -285,15 +260,15 @@ var swiper = new Swiper(".mySwiper", {
         spaceBetween: 0
         },
         375: {
-        slidesPerView: 1,
+        slidesPerView: 3,
         spaceBetween: 0
         },
         320: {
-        slidesPerView: 1,
+        slidesPerView: 3,
         spaceBetween: 0
         },
         280: {
-        slidesPerView: 1,
+        slidesPerView: 3,
         spaceBetween: 0
         },
         414: {
@@ -336,7 +311,7 @@ var swiper = new Swiper(".mySwiper", {
       // Swiper Slider4
 var swiper = new Swiper(".mySwiper4", {
 	slidesPerView: 3,
-	spaceBetween: 30,
+	spaceBetween: 5,
 	loop:true,
 	navigation: {
         nextEl: ".swiper-button-next",
@@ -353,7 +328,7 @@ var swiper = new Swiper(".mySwiper4", {
 	breakpoints: {
 	  // when window width is >= 320px
 	  768: {
-		slidesPerView: 3,
+		slidesPerView: 2,
 		spaceBetween: 20
 	  },
 	  375: {
@@ -374,20 +349,20 @@ var swiper = new Swiper(".mySwiper4", {
 	  },
 	  1920: {
 		slidesPerView: 2,
-		spaceBetween: 20
+		spaceBetween: 10
 	  },
 	  1600: {
 		slidesPerView: 2,
-		spaceBetween: 20
+		spaceBetween: 10
   
 	  },
 	  1366: {
-		slidesPerView: 2,
+		slidesPerView: 1,
 		spaceBetween: 10
 	  },
 	  1400: {
 		slidesPerView: 2,
-		spaceBetween: 20
+		spaceBetween: 10
 	  },
     1366: {
       slidesPerView: 2,
@@ -395,11 +370,11 @@ var swiper = new Swiper(".mySwiper4", {
       },
       2560: {
         slidesPerView: 2,
-        spaceBetween: 20
+        spaceBetween: 10
         },
         1024: {
           slidesPerView: 2,
-          spaceBetween: 20
+          spaceBetween: 10
           }
 	}
   
@@ -598,3 +573,4 @@ lowerSlider.oninput = function () {
     }
     document.querySelector('#one').value=this.value
 };
+

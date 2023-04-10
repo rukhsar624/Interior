@@ -50,7 +50,7 @@
                                 </ul>
                             </div>
                             <a href="../pages/about-us.html" class="header_links">About Us</a>
-                            <a href="../pages/Explore.html" class="header_links">Explore Work</a>
+                            <!-- <a href="../pages/Explore.html" class="header_links">Explore Work</a> -->
                             <a href="../pages/shop.html" class="header_links">Shop</a>
                             <a href="../pages/contact-us.html" class="header_links">Contact Us</a>
                             <a href="../pages/sign-in.html"><i class="fa-solid fa-user"></i></a>
@@ -91,7 +91,7 @@
                     </div>
                 </div>
                 <div class="item"><a href="../pages/about-us.html" class="header_links">About Us</a></div>
-                <div class="item"><a href="../pages/Explore.html" class="header_links">Explore Work</a></div>
+                <!-- <div class="item"><a href="../pages/Explore.html" class="header_links">Explore Work</a></div> -->
                 <div class="item"><a href="../pages/shop.html" class="header_links">Shop</a></div>
                 <div class="item"><a href="../pages/contact-us.html" class="header_links">Contact Us</a></div>
                 <div class="item"><a href="../pages/sign-in.html"><i class="fa-solid fa-user"></i></a></div>
@@ -107,10 +107,10 @@
                     <div class="form">
                         <div class="left-side">
                             <div class="images">
-                                <div class="imgPRoduct">
+                                <div class="imgPRoduct wow animated fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
                                     <div class="Icons">
-                                        <div><a href=""><i class="fa-regular fa-heart"></i></a></div>
-                                        <div><a href=""><i class="fa-solid fa-cart-shopping"></i></a></div>
+                                        <div><a href="../pages/wish-list.html"><i class="fa-regular fa-heart"></i></a></div>
+                                        <div><a href="../pages/cart.html"><i class="fa-solid fa-cart-shopping"></i></a></div>
                                     </div>
                                     <img id="image-preview" class="image-preview image-preview-js thumbnail-image"
                                         src="../images/1x/pro1.png" />
@@ -120,7 +120,7 @@
                                 <div class="swiper mySwiper5">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
-                                            <div class="div1">
+                                            <div class="div1 wow animated fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
                                                 <div class="thumbnail selected">
                                                     <button onclick="myFunction('../images/1x/pro1.png');">
                                                         <img src="../images/1x/pro1.png" />
@@ -129,7 +129,7 @@
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
-                                            <div class="div1">
+                                            <div class="div1 wow animated fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
                                                 <div class="thumbnail">
                                                     <button onclick="myFunction('../images/1x/pro1.png');">
                                                         <img src="../images/1x/pro1.png" />
@@ -138,7 +138,7 @@
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
-                                            <div class="div1">
+                                            <div class="div1 wow animated fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
                                                 <div class="thumbnail">
                                                     <button onclick="myFunction('../images/1x/pro1.png');">
                                                         <img src="../images/1x/pro1.png" />
@@ -147,7 +147,7 @@
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
-                                            <div class="div1">
+                                            <div class="div1 wow animated fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
                                                 <div class="thumbnail">
                                                     <button onclick="myFunction('../images/1x/pro1.png');">
                                                         <img src="../images/1x/pro1.png" />
@@ -177,7 +177,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="right-side">
+                        <div class="right-side wow animated fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
                             <h4>$ 126.00</h4>
                             <form class="rating">
                                 <label>
@@ -212,7 +212,7 @@
                                 </label>
                             </form>
                             <div class="designer">
-                                <p>
+                                <p >
                                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
                                     euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
                                     minim veniam, quis nostrud exerci tation
@@ -238,21 +238,32 @@
                                     </span>
                                 </button>
                             </div>
-                            <div class="sku1 d-flex pt-2">
+                            <div class="sku1 d-flex pt-2 mt-2">
                                 <div class="sku">
                                     <span>Categories: </span><span>Wigs</span>
                                 </div>
                             </div>
                             <div class="sku1 d-flex mt-2">
                                 <div class="sku">
-                                    <span>Lenght </span>
+                                    <span>Lenght: </span>
                                 </div>
                                 <div>
                                     <div class="inpBox">
                                         <button id="decrement" class="min"><i class="fas fa-minus"></i></button>
-                                        <input type="number" id="input" readonly placeholder="1">
+                                        <input type="number" id="input" readonly placeholder="1''">
                                         <button id="increment" class="plus"><i class="fas fa-plus"></i></button>
                                       </div>
+                                </div>
+                            </div>
+                            <div class="sku1 d-flex mt-2">
+                                <div class="sku">
+                                    <span>Colors: </span>
+                                </div>
+                                <div class="d-flex">
+                                    <div class="color1"></div>
+                                    <div class="color2"></div>
+                                    <div class="color3"></div>
+                                    <div class="color4"></div>
                                 </div>
                             </div>
                         </div>
@@ -277,7 +288,7 @@
                         <div class="tab-content" id="myTabContent">
                             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                                 <div class="desc-product-content py-4">
-                                    <p>
+                                    <p class="wow animated bounceIn" data-wow-duration="1s" data-wow-delay="0.5s">
                                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
                                         euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
                                         minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
@@ -299,20 +310,20 @@
                                                 <div class="swiper-wrapper">
                                                     <div class="swiper-slide">
                                                         <div class="swiperImg">
-                                                            <div class="swiperImginner">
+                                                            <div class="swiperImginner wow animated fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
                                                                 <div class="card">
                                                                     <div class="card-body">
                                                                         <div class="card-img">
                                                                             <div class="wishDiv">
                                                                                 <div class="iconDiv1">
-                                                                                    <div><a href=""><i
+                                                                                    <div><a href="../pages/wish-list.html"><i
                                                                                                 class="fa-regular fa-heart"></i></a>
                                                                                     </div>
-                                                                                    <div><a href=""><i
+                                                                                    <div><a href="../pages/cart.html"><i
                                                                                                 class="fa-solid fa-cart-shopping"></i></a>
                                                                                     </div>
                                                                                 </div>
-                                                                                <div class="wishDivInner">
+                                                                                <div class="wishDivInner" class="wow animated bounceIn" data-wow-duration="1s" data-wow-delay="0.5s">
                                                                                     <img src="../images/1x/img7.png"
                                                                                         alt="">
                                                                                 </div>
@@ -390,15 +401,15 @@
                                                     </div>
                                                     <div class="swiper-slide">
                                                         <div class="swiperImg">
-                                                            <div class="swiperImginner">
+                                                            <div class="swiperImginner wow animated fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
                                                                 <div class="card">
                                                                     <div class="card-body">
                                                                         <div class="wishDiv">
                                                                             <div class="iconDiv1">
-                                                                                <div><a href=""><i
+                                                                                <div><a href="../pages/wish-list.html"><i
                                                                                             class="fa-regular fa-heart"></i></a>
                                                                                 </div>
-                                                                                <div><a href=""><i
+                                                                                <div><a href="../pages/cart.html"><i
                                                                                             class="fa-solid fa-cart-shopping"></i></a>
                                                                                 </div>
                                                                             </div>
@@ -457,15 +468,15 @@
                                                     </div>
                                                     <div class="swiper-slide">
                                                         <div class="swiperImg">
-                                                            <div class="swiperImginner">
+                                                            <div class="swiperImginner wow animated fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
                                                                 <div class="card">
                                                                     <div class="card-body">
                                                                         <div class="wishDiv">
                                                                             <div class="iconDiv1">
-                                                                                <div><a href=""><i
+                                                                                <div><a href="../pages/wish-list.html"><i
                                                                                             class="fa-regular fa-heart"></i></a>
                                                                                 </div>
-                                                                                <div><a href=""><i
+                                                                                <div><a href="../pages/cart.html"><i
                                                                                             class="fa-solid fa-cart-shopping"></i></a>
                                                                                 </div>
                                                                             </div>
@@ -525,15 +536,15 @@
                                                     </div>
                                                     <div class="swiper-slide">
                                                         <div class="swiperImg">
-                                                            <div class="swiperImginner">
+                                                            <div class="swiperImginner wow animated fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
                                                                 <div class="card">
                                                                     <div class="card-body">
                                                                         <div class="wishDiv">
                                                                             <div class="iconDiv1">
-                                                                                <div><a href=""><i
+                                                                                <div><a href="../pages/wish-list.html"><i
                                                                                             class="fa-regular fa-heart"></i></a>
                                                                                 </div>
-                                                                                <div><a href=""><i
+                                                                                <div><a href="../pages/cart.html"><i
                                                                                             class="fa-solid fa-cart-shopping"></i></a>
                                                                                 </div>
                                                                             </div>
@@ -659,13 +670,9 @@
                                                             </div>
                                                         </div>
                                                     </div>
-
-
                                                 </div>
-
                                             </div>
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
@@ -857,15 +864,7 @@
         </div>
     </div>
 </section> 
-<!--=================Home Footer Section Close=====================--->
-
-
-
-
-
-
-
-
+<!--=================Home Footer Section Close=====================---
 
     <!-- JavaScript Libraries -->
     <!-- Jquery -->
@@ -879,5 +878,75 @@
     <!-- Custom Javascript -->
     <script src="../js/main.js"></script>
 </body>
+<script>
+    // counter button
+let counter = 0;
 
+function increment() {
+  counter++;
+}
+
+function decrement() {
+  counter--;
+}
+
+function get() {
+  return counter;
+}
+
+const inc = document.getElementById("increment");
+const input = document.getElementById("input");
+const dec = document.getElementById("decrement");
+
+inc.addEventListener("click", () => {
+  increment();
+  input.value = get();
+});
+
+dec.addEventListener("click", () => {
+  if (input.value > 0) {
+    decrement();
+  }
+  input.value = get();
+});
+// Product Card
+var plus = document.querySelector(".fa-plus");
+var minus = document.querySelector(".fa-minus");
+var qty = document.querySelector(".qty");
+
+plus?.addEventListener("click", function () {
+  var increment = parseInt(qty.innerHTML);
+  if (increment < 1000) {
+    increment = increment + 1;
+    qty.innerHTML = increment;
+  }
+});
+
+minus.addEventListener("click", function () {
+  var decrement = parseInt(qty.innerHTML);
+  if (decrement > 1) {
+    decrement = decrement - 1;
+    qty.innerHTML = decrement;
+  }
+});
+
+var heart = document.querySelector(".fa-heart-o");
+
+heart.addEventListener("click", function () {
+  if (heart.classList.contains("fa-heart-o")) {
+    heart.classList.remove("fa-heart-o");
+    heart.classList.add("fa-heart");
+  } else {
+    heart.classList.add("fa-heart-o");
+    heart.classList.remove("fa-heart");
+  }
+});
+
+$(document).ready(function () {
+  $(".nav-tabs a").click(function () {
+    $(this).tab("show");
+  });
+});
+
+</script>
 </html>

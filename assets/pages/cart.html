@@ -48,7 +48,7 @@
                                 </ul>
                             </div>
                             <a href="../pages/about-us.html" class="header_links">About Us</a>
-                            <a href="../pages/Explore.html" class="header_links">Explore Work</a>
+                            <!-- <a href="../pages/Explore.html" class="header_links">Explore Work</a> -->
                             <a href="../pages/shop.html" class="header_links">Shop</a>
                             <a href="../pages/contact-us.html" class="header_links">Contact Us</a>
                             <a href="../pages/sign-in.html"><i class="fa-solid fa-user"></i></a>
@@ -89,7 +89,7 @@
                     </div>
                 </div>
                 <div class="item"><a href="../pages/about-us.html" class="header_links">About Us</a></div>
-                <div class="item"><a href="../pages/Explore.html" class="header_links">Explore Work</a></div>
+                <!-- <div class="item"><a href="../pages/Explore.html" class="header_links">Explore Work</a></div> -->
                 <div class="item"><a href="../pages/shop.html" class="header_links">Shop</a></div>
                 <div class="item"><a href="../pages/contact-us.html" class="header_links">Contact Us</a></div>
                 <div class="item"><a href="../pages/sign-in.html"><i class="fa-solid fa-user"></i></a></div>
@@ -101,19 +101,20 @@
   <section class="cartSection">
     <div class="container">
         <div class="row">
-            <div class="col-lg-7">
-                <!-- <div class="d-flex justify-content-between textDiv">
-                    <div>
-                        <h3>Shopping cart</h3>
+            <div class="col-lg-8 col-sm-12">
+                <div class="row">
+                
+                    <div class="col-lg-6 col-md-4 col-sm-4 col-xm-4">
+                        <h3 class="wow  fadeInLeft animated" data-wow-duration="1s" data-wow-delay="0.5s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.5s; animation-name: fadeInLeft;">Shipping Cart</h3>
                     </div>
-                    <div>
-                        <h5>3 Items</h5>
+                    <div class="col-lg-6 col-md-6 col-sm-4 col-xm-4">
+                        <h4 class="wow animate fadeInRight text-lg-end" data-wow-duration="1s" data-wow-delay="0.5s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.5s; animation-name: fadeInRight;">3 Items</h4>
                     </div>
-                </div> -->
-                <table class="table product1">
+                </div>
+                <table class="table product1 table-responsive-sm">
                     <thead>
                       <tr>
-                        <th scope="col">Product</th>
+                        <th scope="col">PRODUCT DETAILS</th>
                         <th scope="col" class="text-lg-center">QUANTITY</th>
                         <th scope="col">PRICE</th>
                       </tr>
@@ -131,7 +132,7 @@
                                 </div>
                                 <div class="productBtn d-flex justify-content-center align-items-center flex-column">
                                    <div class="pText">
-                                    <h6>wildwood</h6>
+                                    <h6>Chair</h6>
                                    </div>
                                     <div class="pBtn">
                                         <button>Remove</button>
@@ -142,11 +143,11 @@
                         <td><div class="qnt mt-3">
                             <div class="d-flex align-items-center flex-column justify-content-center">                                
                             <div class=" cart-price mt-5">
-                                <div class="inpBox mx-auto">
-                                    <button class="plus" id="cart-plus" onclick="incrementValue()">+</button>
-                                        <input type="text" placeholder="1" id="number">
-                                        <button class="min" id="cart-plus" onclick="decrementValue()">-</button>
-                                </div>   
+                                <div class="inpBox">
+                                    <button id="decrement1" class="min"><i class="fas fa-minus"></i></button>
+                                    <input type="number " id="input1" readonly placeholder="1">
+                                    <button id="increment1" class="plus"><i class="fas fa-plus"></i></button>
+                                  </div> 
                             </div>
                             </div>
                          </div></td>
@@ -162,14 +163,14 @@
                             <div class="d-flex">
                                 <div class="imgInnerDiv1 mt-4">
                                     <div class="imgDiv11">
-                                        <img src="../images/1x/product1.png" alt="">
+                                        <img src="../images/1x/product2.png" alt="">
                                     </div>
                                     <div>
                                     </div>
                                 </div>
                                 <div class="productBtn d-flex justify-content-center align-items-center flex-column">
                                    <div class="pText">
-                                    <h6>wildwood</h6>
+                                    <h6>Lamp</h6>
                                    </div>
                                     <div class="pBtn">
                                         <button>Remove</button>
@@ -180,11 +181,11 @@
                         <td><div class="qnt mt-3">
                             <div class="d-flex align-items-center flex-column justify-content-center">
                             <div class=" cart-price mt-5">
-                                <div class="inpBox mx-auto">
-                                    <button class="plus" id="cart-plus" onclick="incrementValue()">+</button>
-                                        <input type="text" placeholder="1" id="number">
-                                        <button class="min" id="cart-plus" onclick="decrementValue()">-</button>
-                                </div>
+                                <div class="inpBox">
+                                    <button id="decrement2" class="min"><i class="fas fa-minus"></i></button>
+                                    <input type="number " id="input2" readonly placeholder="1">
+                                    <button id="increment2" class="plus"><i class="fas fa-plus"></i></button>
+                                  </div> 
                             </div>
                             </div>
                          </div></td>
@@ -199,14 +200,14 @@
                             <div class="d-flex">
                                 <div class="imgInnerDiv1 mt-4">
                                     <div class="imgDiv11">
-                                        <img src="../images/1x/product1.png" alt="">
+                                        <img src="../images/1x/product3.png" alt="">
                                     </div>
                                     <div>
                                     </div>
                                 </div>
                                 <div class="productBtn d-flex justify-content-center align-items-center flex-column">
                                    <div class="pText">
-                                    <h6>wildwood</h6>
+                                    <h6>Bed</h6>
                                    </div>
                                     <div class="pBtn">
                                         <button>Remove</button>
@@ -218,11 +219,11 @@
                             <div class="d-flex align-items-center flex-column justify-content-center">
                                
                             <div class=" cart-price mt-5">
-                                <div class="inpBox mx-auto">
-                                    <button class="plus" id="cart-plus" onclick="incrementValue()">+</button>
-                                        <input type="text" placeholder="1" id="number">
-                                        <button class="min" id="cart-plus" onclick="decrementValue()">-</button>
-                                </div>
+                                <div class="inpBox">
+                                    <button id="decrement3" class="min"><i class="fas fa-minus"></i></button>
+                                    <input type="number " id="input3" readonly placeholder="1">
+                                    <button id="increment3" class="plus"><i class="fas fa-plus"></i></button>
+                                  </div> 
                                 
                             </div>
                             </div>
@@ -236,7 +237,7 @@
                     </tbody>
                   </table>
             </div>          
-            <div class="col-lg-5">
+        <div class="col-lg-4 col-sm-12">
                 <div class="Order">
                     <h4 >Order Summery</h4>
                     <div class="d-flex justify-content-between orderinnerDiv mt-4">
@@ -283,7 +284,7 @@
                     </div>
                     
                 </div>
-            </div>
+            </div> 
         </div>
     </div>
   </section>
@@ -362,4 +363,109 @@
     <!-- Custom Javascript -->
     <script src="../js/main.js"></script>
 </body>
+<script>
+    // counter button1
+let counter = 0;
+
+function increment() {
+  counter++;
+}
+
+function decrement() {
+  counter--;
+}
+
+function get() {
+  return counter;
+}
+
+const inc = document.getElementById("increment1");
+const input = document.getElementById("input1");
+const dec = document.getElementById("decrement1");
+
+inc.addEventListener("click", () => {
+  increment();
+  input.value = get();
+});
+
+dec.addEventListener("click", () => {
+  if (input.value > 0) {
+    decrement();
+  }
+  input.value = get();
+});
+// Product Card
+var plus = document.querySelector(".fa-plus");
+var minus = document.querySelector(".fa-minus");
+var qty = document.querySelector(".qty");
+
+plus?.addEventListener("click", function () {
+  var increment = parseInt(qty.innerHTML);
+  if (increment < 1000) {
+    increment = increment + 1;
+    qty.innerHTML = increment;
+  }
+});
+
+minus.addEventListener("click", function () {
+  var decrement = parseInt(qty.innerHTML);
+  if (decrement > 1) {
+    decrement = decrement - 1;
+    qty.innerHTML = decrement;
+  }
+});
+
+// counter button1
+let counter2 = 0;
+
+function increment2() {
+  counter2++;
+}
+
+function decrement2() {
+  counter2--;
+}
+
+function get2() {
+  return counte2;
+}
+
+const inc2 = document.getElementById("increment2");
+const input2 = document.getElementById("input2");
+const dec2 = document.getElementById("decrement2");
+
+inc.addEventListener("click", () => {
+  increment2();
+  input.value = get2();
+});
+
+dec.addEventListener("click", () => {
+  if (input.value > 0) {
+    decrement2();
+  }
+  input.value = get2();
+});
+// Product Card
+var plus = document.querySelector(".fa-plus");
+var minus = document.querySelector(".fa-minus");
+var qty = document.querySelector(".qty");
+
+plus?.addEventListener("click", function () {
+  var increment2 = parseInt(qty.innerHTML);
+  if (increment2 < 1000) {
+    increment2 = increment + 1;
+    qty.innerHTML = increment2;
+  }
+});
+
+minus.addEventListener("click", function () {
+  var decrement2 = parseInt(qty.innerHTML);
+  if (decrement2 > 1) {
+    decrement2 = decrement2 - 1;
+    qty.innerHTML = decrement2;
+  }
+});
+
+ 
+</script>
 </html>
