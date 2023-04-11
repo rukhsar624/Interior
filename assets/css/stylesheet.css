@@ -36,6 +36,10 @@ body::-webkit-scrollbar-thumb {
     src: url("../../assets/fonts/Montserrat/Montserrat-Light.ttf");
 }
 @font-face {
+  font-family: "Mont-Medium";
+  src: url("../../assets/fonts/Montserrat/Montserrat-Medium.ttf");
+}
+@font-face {
     font-family: "Mont-Reg";
     src: url("../../assets/fonts/Montserrat/Montserrat-Regular.ttf");
 }
@@ -435,20 +439,36 @@ body::-webkit-scrollbar-thumb {
     transform: translateY(-50px);
 }
 
-.Homebanner .right .swiper-pagination-fraction,
+.Homebanner .mySwiper .swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 10px;
+  left: 0!important;
+  width: 100%;
+}
+/* .Homebanner .right .swiper-pagination-fraction,
 .swiper-pagination-custom,
 .swiper-horizontal>.swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal {
     bottom: 5px;
     left: 0!important;
     width: 100%;
-}
+} */
 /* .Homebanner .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
   bottom: 5px;
   left: 0;
   width: 100%;
 } */
-.Homebanner .right .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.Homebanner .mySwiper .swiper-pagination-bullets.swiper-pagination-horizontal .swiper-pagination-bullet{
+  border: 3px solid #fff;
+  background-color: #CDBDAE;
+  width: 15px;
+  height: 15px;
+}
+.Homebanner .mySwiper .swiper-pagination-bullets.swiper-pagination-horizontal .swiper-pagination-bullet-active{
+  background-color: #CDBDAE;
+    width: 15px;
+    height: 15px;
+}
+/* .Homebanner .right .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
     border: 3px solid #fff;
     background-color: transparent;
@@ -460,7 +480,7 @@ body::-webkit-scrollbar-thumb {
     background-color: #CDBDAE;
     width: 15px;
     height: 15px;
-}
+} */
 
 
 
@@ -581,7 +601,7 @@ body::-webkit-scrollbar-thumb {
     background-color: #fff;
     margin-top: 6rem;
     min-height: 600px;
-    width: 99%;
+    width: 100%;
     /* display: flex;
     justify-content: center;
     align-items: center; */
@@ -594,8 +614,14 @@ body::-webkit-scrollbar-thumb {
     font-family: "Balgin-Bold";
 
 }
+#homeProduct{
+  color: #004C4C;
+  font-family: "Balgin-Bold";
+
+}
 .mLeft{
   margin-left: 9rem;
+  margin-top: 10rem;
 }
 .homeProduct span {
     color: #787C85;
@@ -634,6 +660,27 @@ body::-webkit-scrollbar-thumb {
 .sliderPrd {
     width: 100%;
     height: 550px;
+    position: relative;
+}
+.sliderTextDiv{
+  position: absolute;
+    width: 100%;
+    height: 90px;
+    bottom: 0px;
+    left: 0px;
+    padding: 15px;
+}
+.sliderTextDiv h4 {
+  color: #fff;
+  font-family: "Balgin-Bold";
+}
+.sliderTextDiv h5 {
+  color: #fff;
+  font-family: "Balgin-Bold";
+}
+.sliderTextDiv span {
+  color: #fff;
+  font-family: "Balgin-Extra-Light-Sm";
 }
 .sliderPrdImg {
     width: 100%;
@@ -663,6 +710,14 @@ body::-webkit-scrollbar-thumb {
   left: 260px!important;
     width: 100%!important;
 }
+.swiperNumhr1{
+  background-color: #004C4C!important;
+    width: 33%!important;
+    height: 3px!important;
+    position: absolute;
+    bottom: 22px!important;
+    left: 340px!important;
+}
 .swiperNumhr{
   background-color: #DBB43F!important;
     width: 33%!important;
@@ -671,7 +726,7 @@ body::-webkit-scrollbar-thumb {
     bottom: 22px!important;
     left: 340px!important;
 }
-#homeProduct .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.homeProduct .mySwiper3 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
     color: #CCCCCC!important;
     background-color: transparent!important;
@@ -680,7 +735,7 @@ body::-webkit-scrollbar-thumb {
     font-family: "Poppins-Light"!important; 
     font-size: 15px!important;
 }
-#homeProduct .siper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.homeProduct .mySwiper3  .siper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet-active {
   color: #000!important;
   transition: all .25s ease-out!important;
@@ -750,26 +805,26 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* ==========Home Good Thimgs Section Close=========== */
-/* ==========Home Best Salling Product Section Open=========== */
-.bestSalling {
+/* ==========Home Best selling Product Section Open=========== */
+.bestselling {
     margin-top: 5rem;
     margin-bottom: 5rem;
 }
 
-.bestSalling h2 {
+.bestselling h2 {
     color: #41607F;
     font-family: "Balgin-Bold";
     font-size: 2.5rem;
 }
 
-.bestSalling h3 {
+.bestselling h3 {
     color: #787C85;
     font-family: "Balgin-Bold";
     font-size: 2.5rem;
     padding-bottom: 2rem;
 }
 
-.bestSalling p {
+.bestselling p {
     color: #787C85;
     font-family: "Mont-Light";
     line-height: 2;
@@ -803,12 +858,12 @@ body::-webkit-scrollbar-thumb {
     object-fit: cover;
 }
 
-.bestSalling h4 {
+.bestselling h4 {
     font-family: "Poppins-Light";
     color: #fff;
 }
 
-.bestSalling span {
+.bestselling span {
     font-family: "Poppins-Bold";
     color: #fff;
 }
@@ -883,7 +938,7 @@ body::-webkit-scrollbar-thumb {
     visibility: hidden;
 }
 
-/* ==========Home Best Salling Product Section Close=========== */
+/* ==========Home Best selling Product Section Close=========== */
 
 /* ==========Home Client Section Open=========== */
 .clientSec {
@@ -1147,31 +1202,48 @@ body::-webkit-scrollbar-thumb {
   left: 0;
   bottom: 0;
 }
-.clientSec.swiper-pagination-bullets.swiper-pagination-horizontal {
+#clientSec .mySwiper1 .swiper-pagination-bullets.swiper-pagination-horizontal {
     bottom: 5px;
     left: 0!important;
     width: 100%;
 }
-.clientSec.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+#clientSec .mySwiper1 .swiper-pagination-bullets.swiper-pagination-horizontal .swiper-pagination-bullet{
+  background-color: #41607F!important;
+    border: none!important;
+    opacity: 1!important;
+    transition: all .3s!important;
+    width: 18px!important;
+    height: 18px!important;
+}
+#clientSec .mySwiper1 .swiper-pagination-bullets.swiper-pagination-horizontal .swiper-pagination-bullet-active{
+  width: 48px!important;
+    height: 18px!important;
+    display: inline-block!important;
+    border-radius: 10px!important;
+    background-color: #a6a8ab!important;
+    opacity: 1!important;
+    transition: all .3s!important;
+}
+/* #clientSec .mySwiper1 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-    background-color: #41607F;
-    border: none;
-    opacity: 1;
-    transition: all .3s;
-    width: 18px;
-    height: 18px;
-}
+    background-color: #41607F!important;
+    border: none!important;
+    opacity: 1!important;
+    transition: all .3s!important;
+    width: 18px!important;
+    height: 18px!important;
+} */
 
-.clientSec .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+/* #clientSec .mySwiper1 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet-active {
-    width: 48px;
-    height: 18px;
-    display: inline-block;
-    border-radius: 10px;
-    background-color: #a6a8ab;
-    opacity: 1;
-    transition: all .3s;
-}
+    width: 48px!important;
+    height: 18px!important;
+    display: inline-block!important;
+    border-radius: 10px!important;
+    background-color: #a6a8ab!important;
+    opacity: 1!important;
+    transition: all .3s!important;
+} */
 
 
 
@@ -1418,7 +1490,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* ==========abouts section css open======== */
-.bestSallinghome2 {
+.bestsellinghome2 {
     min-height: 700px;
     margin-bottom: 2rem;
     /* background-color: #007aff; */
@@ -2531,10 +2603,10 @@ body::-webkit-scrollbar-thumb {
   .cartSection {
     margin-top: 150px;
     padding: 1rem;
-    width: 90%;
-    display: flex;
+    width: 100%;
+    /* display: flex;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; */
   }
   .img_girl_left .div1 .thumbnail button{
   border: none;
@@ -2573,7 +2645,7 @@ body::-webkit-scrollbar-thumb {
   .price h6 {
     color: #4D4D4D;
     font-size: 11px;
-    font-family: Mont-Medium;
+    font-family: "Mont-Medium";
     line-height: 2px;
   
   }
@@ -2584,12 +2656,20 @@ body::-webkit-scrollbar-thumb {
   }
   
   .productBtn h6 {
-    font-family: Mont-Bold;
+    font-family: "Mont-Reg";
     color: #000;
     font-size: 15px;
     text-transform: capitalize;
   }
-  
+  .table>:not(:last-child)>:last-child>* {
+    border-bottom-color: #fff;
+}
+.table>:not(caption)>*>* {
+  border-bottom-width: 0px;
+}
+.table tr th{
+  font-family: "Mont-Medium";
+}
   .pText {
     height: 50px;
     padding-top: 2rem;
@@ -2624,6 +2704,7 @@ body::-webkit-scrollbar-thumb {
     position: relative;
     border: 1px solid #DF9CA6;
     border: none;
+    margin-left: 4rem;
   }
   
   .inpBox input {
@@ -2672,7 +2753,7 @@ body::-webkit-scrollbar-thumb {
   
   .Order {
     width: 420px;
-    /* height: 500px; */
+    /* height: 680px; */
     background-color: #F1F1F1;
     /* margin-left: 2rem; */
     margin: auto;
@@ -2714,6 +2795,7 @@ body::-webkit-scrollbar-thumb {
     background-color: #fff;
     border: none;
     padding: 15px 5px;
+    font-family: "Mont-Reg";
   
   }
   .apply button{
@@ -3299,8 +3381,8 @@ body::-webkit-scrollbar-thumb {
 
 }
 /*========== Sign page Css Closed============*/
-/*========== best salling product page Css open============*/
-.bestSallingbannner{
+/*========== best selling product page Css open============*/
+.bestsellingbannner{
     background: url("../images/1x/aboutBanner.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -3313,7 +3395,7 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     z-index: 0;
 }
-.bestSallingbannner::after {
+.bestsellingbannner::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -3324,16 +3406,16 @@ body::-webkit-scrollbar-thumb {
     opacity: 0.8;
     z-index: -1;
 }
-.bestSallingbannner h1{
+.bestsellingbannner h1{
     color: #fff;
     font-family: "Balgin-Bold";
 }
-.bestSallingbannner p{
+.bestsellingbannner p{
     color: #fff;
     font-family: "Mont-Light";
     text-align: center;
 }
-.sallingLeft{
+.sellingLeft{
     width: 30%;
     background-image: url("../images/1x/filterbg.png");
     background-position: center;
@@ -3343,7 +3425,7 @@ body::-webkit-scrollbar-thumb {
     z-index: 0;
     padding: 5rem;
 }
-.sallingLeft::after{
+.sellingLeft::after{
     content: "";
     position: absolute;
     width: 100%;
@@ -3353,7 +3435,7 @@ body::-webkit-scrollbar-thumb {
     background-image: url("../images/1x/overlay4.png");
     z-index: -1;
 }
-.sallingLeft h5{
+.sellingLeft h5{
     color: #fff;
     font-family: "Mont-Bold";
     padding-bottom: 1rem;
@@ -3854,10 +3936,10 @@ body::-webkit-scrollbar-thumb {
   
   /* rating star */
   
-.sallingRight{
+.sellingRight{
     width: 70%;
 }
-/*========== best salling product page Css Closed============*/
+/*========== best selling product page Css Closed============*/
 
 
 
@@ -4328,14 +4410,14 @@ body::-webkit-scrollbar-thumb {
 .qou {
   left: 0px;
 }
-.sallingMainDiv{
+.sellingMainDiv{
   flex-wrap: wrap;
   width: 100%;
 }
-.sallingLeft{
+.sellingLeft{
   width: 100%;
 }
-.sallingRight{
+.sellingRight{
   width: 100%;
 
 }
@@ -4453,14 +4535,14 @@ body::-webkit-scrollbar-thumb {
 .qou {
   left: 0px;
 }
-.sallingMainDiv{
+.sellingMainDiv{
   flex-wrap: wrap;
   width: 100%;
 }
-.sallingLeft{
+.sellingLeft{
   width: 100%;
 }
-.sallingRight{
+.sellingRight{
   width: 100%;
 
 }
@@ -4721,14 +4803,14 @@ width: 90%;
 .newmain .newright {
 width: 100%;
 }
-.bestSallinghome2
+.bestsellinghome2
 .newmain .newright h2 {
   color: #000;
 }
 .newmain .newright input {
   border: 1px solid #000;
 }
-.bestSallinghome2 {
+.bestsellinghome2 {
   width: 90%;
   margin: auto;
 }
@@ -4770,19 +4852,29 @@ width: 100%;
   display: block;
   width: 100%;
 }
+.seccart h3{
+  color: #000;
+  font-family: "Balgin-Bold-Extra-Light";
+
+}
+.table tbody, td, tfoot, th, thead, tr {
+  border-color: inherit;
+  border-style: none!important;
+  border-width: 0;
+}
 .Order {
   width: 100%;
   padding-left: 20px;
     padding-right: 20px;
 }
-.sallingMainDiv{
+.sellingMainDiv{
   flex-wrap: wrap;
   width: 100%;
 }
-.sallingLeft{
+.sellingLeft{
   width: 100%;
 }
-.sallingRight{
+.sellingRight{
   width: 100%;
 
 }
@@ -4800,6 +4892,35 @@ width: 100%;
   width: 100%;
   /* height: 500px; */
   text-align: center;
+}
+.imgAboutPage ,.imgAboutPageInner {
+  width: 90%;
+  height: 400px;
+  margin: auto;
+}
+.secImg ,.secImgDiv{
+  width: 90%;
+  height: 350px;
+  margin: auto;
+}
+.sliderTextDiv h4 , .sliderTextDiv h5 , .sliderTextDiv span{
+  font-size: 11px;
+}
+.inpBox {
+  width: 100%;
+  position: relative;
+  border: 1px solid #DF9CA6;
+  border: none;
+}
+.inpBox .plus {
+  position: absolute;
+  top: 4px;
+  right: 1px;
+  color: #000;
+  font-size: 12px;
+}
+.inpBox {
+  margin-left: 0rem;
 }
 }
 @media only screen and (max-width:390px) {

@@ -225,7 +225,7 @@
                                     <span class="qty">1</span>
                                     <i class="fa fa-plus" onclick="counter(event,'plus')"></i>
                                 </div>
-                                <a href="../../assets/dashboard/cart.html">
+                                <a href="../pages/cart.html">
                                     <button>
                                         <span><i class="fa fa-shopping-cart"></i></span> Add to
                                         cart
@@ -864,7 +864,7 @@
         </div>
     </div>
 </section> 
-<!--=================Home Footer Section Close=====================---
+<!--=================Home Footer Section Close=====================----->   
 
     <!-- JavaScript Libraries -->
     <!-- Jquery -->
@@ -879,6 +879,20 @@
     <script src="../js/main.js"></script>
 </body>
 <script>
+    // MyFunction
+    function myFunction(imgs) {
+        console.log(imgs,'helo')
+        var expandImg = document.getElementById("image-preview");
+        expandImg.src = imgs;
+        expandImg.parentElement.style.display = "block";
+      }
+      $("#image-preview").on('click',()=>{
+        const image = $("#image-preview").attr('src')
+        console.log(image);
+        $('#bigImage').attr('src',image)
+        $('#galleryModal').modal('show');
+      })
+    //   
     // counter button
 let counter = 0;
 
@@ -932,15 +946,6 @@ minus.addEventListener("click", function () {
 
 var heart = document.querySelector(".fa-heart-o");
 
-heart.addEventListener("click", function () {
-  if (heart.classList.contains("fa-heart-o")) {
-    heart.classList.remove("fa-heart-o");
-    heart.classList.add("fa-heart");
-  } else {
-    heart.classList.add("fa-heart-o");
-    heart.classList.remove("fa-heart");
-  }
-});
 
 $(document).ready(function () {
   $(".nav-tabs a").click(function () {
