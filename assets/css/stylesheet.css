@@ -80,6 +80,7 @@ body::-webkit-scrollbar-thumb {
     text-decoration: none;
     margin: 0 10px;
     color: #000;
+    font-weight: bold;
     align-items: center;
     font-size: 0.9rem;
     font-family: "Mont-Light";
@@ -320,6 +321,7 @@ body::-webkit-scrollbar-thumb {
     text-decoration: none;
     margin: 0px 4px;
     color: #000;
+    font-weight: bold;
     align-items: center;
     padding-left: 20px;
     padding-right: 20px;
@@ -458,15 +460,16 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
 } */
 .Homebanner .mySwiper .swiper-pagination-bullets.swiper-pagination-horizontal .swiper-pagination-bullet{
-  border: 3px solid #fff;
-  background-color: #CDBDAE;
-  width: 15px;
-  height: 15px;
+  border: 3px solid #fff!important;
+  width: 15px!important;
+  height: 15px!important;
 }
 .Homebanner .mySwiper .swiper-pagination-bullets.swiper-pagination-horizontal .swiper-pagination-bullet-active{
-  background-color: #CDBDAE;
-    width: 15px;
-    height: 15px;
+  background-color: #CDBDAE!important;
+  border: 3px solid #CDBDAE!important;
+    width: 15px!important;
+    height: 15px!important;
+    transform: none!important;
 }
 /* .Homebanner .right .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
