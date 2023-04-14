@@ -98,10 +98,10 @@ var swiper = new Swiper(".mySwiper", {
         el: ".swiper-pagination",
         clickable: true,
       },
-      // autoplay: {
-      //   delay: 3000,
-      //   disableOnInteraction: false,
-      //   },
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+        },
 	breakpoints: {
 	  // when window width is >= 320px
 	  768: {
@@ -174,10 +174,10 @@ var swiper = new Swiper(".mySwiper", {
           el: ".swiper-pagination",
           clickable: true,
         },
-        // autoplay: {
-        //   delay: 3000,
-        //   disableOnInteraction: false,
-        //   },
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+          },
     breakpoints: {
       // when window width is >= 320px
       768: {
@@ -249,10 +249,10 @@ var swiper = new Swiper(".mySwiper", {
               return '<span class="' + className + '">' + (index + 1) + "</span>";
             },
           },
-          // autoplay: {
-          //   delay: 3000,
-          //   disableOnInteraction: false,
-          //   },
+          autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+            },
       breakpoints: {
         // when window width is >= 320px
         768: {
@@ -366,7 +366,7 @@ var swiper = new Swiper(".mySwiper4", {
 	  },
     1366: {
       slidesPerView: 2,
-      spaceBetween: 10
+      spaceBetween: 15
       },
       2560: {
         slidesPerView: 2,
